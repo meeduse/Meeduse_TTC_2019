@@ -44,6 +44,6 @@ Contributors:
     * German Vega: CNRS France.
     * Michael Leuschel: University of Dusseldorf, Germany.
 
-Acknowledgment
+Acknowledgment:
 
    * We woud like to thank Yves Ledru and Jean-Luc Richier for testing these artifacts on both Windows and Linux.
