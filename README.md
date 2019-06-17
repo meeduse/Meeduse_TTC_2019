@@ -11,10 +11,9 @@ To Use Meeduse please follow these steps:
 
 https://www.eclipse.org/downloads/packages/release/oxygen/3a/eclipse-modeling-tools
 
-2) Launch your eclipse and install Meeduse using the update site (untick group items by category) provided in this repository or 
-using the following link:
+2) Launch your eclipse and install Meeduse using the update site (untick group items by category) provided in the following link:
+http://vasco.imag.fr/tools/meeduse/ttc2019/Meeduse_updatesite/
 
-TO BE DONE
 
 3) In order to replay the Meeduse solution for TTC'2019, you should import into your main workspace the three projects of folder eclipse_wksp.
 * **ttc2019.metamodels**: is provided by TTC'2019
