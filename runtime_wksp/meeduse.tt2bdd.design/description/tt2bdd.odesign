@@ -36,7 +36,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="AssignmentNode" preconditionExpression="[not self.port.oclIsUndefined()/]" semanticCandidatesExpression="[Assignment.allInstances()/]" domainClass="meeduse_tt2bdd::Assignment">
-          <style xsi:type="style:SquareDescription" labelSize="14" showIcon="false" labelExpression="[self.port.name + ' = ' + if value then 1 else 0 endif/]" labelPosition="node" resizeKind="NSEW" width="5" height="3">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="[self.port.name + ' = ' + if value then 1 else 0 endif/]" labelPosition="node" resizeKind="NSEW" width="5" height="3">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
