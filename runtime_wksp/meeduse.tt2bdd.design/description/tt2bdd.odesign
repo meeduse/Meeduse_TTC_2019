@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="tt2bdd" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:CrossTableDescription" name="Truth Table" domainClass="meeduse_tt2bdd::TruthTable">
+      <ownedLineMappings name="rowLine" domainClass="meeduse_tt2bdd::Row" semanticCandidatesExpression="feature:rows" headerLabelExpression="feature:name">
+        <defaultForeground labelSize="14">
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <backgroundConditionalStyle predicateExpression="[self.cells->forAll(done)/]">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </backgroundConditionalStyle>
+      </ownedLineMappings>
+      <ownedColumnMappings name="portColumn" headerLabelExpression="feature:name" domainClass="meeduse_tt2bdd::Port" semanticCandidatesExpression="feature:ports"/>
+      <intersection name="cell" canEdit="true" lineMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Truth%20Table']/@ownedLineMappings[name='rowLine']" columnMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Truth%20Table']/@ownedColumnMappings.0" labelExpression="[if value then 1 else 0 endif/]" useDomainClass="true" columnFinderExpression="[self.port/]" lineFinderExpression="[self.eContainer()/]" semanticCandidatesExpression="[self.rows.cells/]" domainClass="meeduse_tt2bdd::Cell">
+        <backgroundConditionalStyle predicateExpression="[self.done/]">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </backgroundConditionalStyle>
+        <backgroundConditionalStyle predicateExpression="[self.selected and not self.done/]">
+          <style>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </backgroundConditionalStyle>
+      </intersection>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:DiagramDescription" name="BDD" domainClass="meeduse_tt2bdd::BDD" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="SubTreeNode" semanticCandidatesExpression="[Subtree.allInstances()/]" domainClass="meeduse_tt2bdd::Subtree">
+          <style xsi:type="style:EllipseNodeDescription" borderSizeComputationExpression="1" labelSize="16" showIcon="false" labelExpression="[port.name/]" sizeComputationExpression="4" labelPosition="node">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="AssignmentNode" preconditionExpression="[not self.port.oclIsUndefined()/]" semanticCandidatesExpression="[Assignment.allInstances()/]" domainClass="meeduse_tt2bdd::Assignment">
+          <style xsi:type="style:SquareDescription" labelSize="14" showIcon="false" labelExpression="[self.port.name + ' = ' + if value then 1 else 0 endif/]" labelPosition="node" resizeKind="NSEW" width="5" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="AssignmentEdgeOne" semanticCandidatesExpression="[Leaf.allInstances()->select(l|l.eContainer().oclAsType(Subtree).treeForOne = l)/]" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='SubTreeNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='AssignmentNode']" targetFinderExpression="[self.assignments/]" sourceFinderExpression="[self.eContainer()/]" domainClass="meeduse_tt2bdd::Leaf" useDomainElement="true">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="AssignmentEdgeZero" semanticCandidatesExpression="[Leaf.allInstances()->select(l|l.eContainer().oclAsType(Subtree).treeForZero = l)/]" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='SubTreeNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='AssignmentNode']" targetFinderExpression="[self.assignments/]" sourceFinderExpression="[self.eContainer()/]" domainClass="meeduse_tt2bdd::Leaf" useDomainElement="true">
+          <style lineStyle="dash">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="forZeroEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='SubTreeNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='SubTreeNode']" targetFinderExpression="feature:treeForZero">
+          <style lineStyle="dash">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="forOneEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='SubTreeNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='BDD']/@defaultLayer/@nodeMappings[name='SubTreeNode']" targetFinderExpression="feature:treeForOne">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

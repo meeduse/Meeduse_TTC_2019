@@ -1,0 +1,176 @@
+REFINEMENT
+	meeduse_tt2bddref
+REFINES
+	meeduse_tt2bddmain
+INCLUDES
+	meeduse_tt2bdd
+DEFINITIONS
+SET_PREF_COMPRESSION == TRUE;
+SET_PREF_IGNORE_HASH_COLLISIONS == TRUE;
+SET_PREF_MAXINT == 127; 
+SET_PREF_MININT == -128;
+SET_PREF_MAX_DISPLAY_SET == -1 ;
+SET_PREF_SHOW_EVENTB_ANY_VALUES == TRUE;
+SET_PREF_MAX_OPERATIONS == 1 ;
+SET_PREF_TRACE_INFO == TRUE ;
+SET_PREF_DOUBLE_EVALUATION == FALSE ;
+"LibraryIO.def";
+/*GOAL == (Rows={});*/
+
+	portRow(r) == (cellPort~ ; cells) |> r ;
+	maxPort(p,r) == p : InputPort & r <: Row &
+		not( # s . (s : InputPort & s /= p & s : dom(portRow(r))
+			& card(portRow(r)[{s}]) > card(portRow(r)[{p}]))) ;
+	zeroCells(p) == /*{c | c : Cell & cellPort(c) = p 
+				& cells(c) : r & Cell_value(c) = FALSE} ;*/
+			
+			(cellPort~[{p}] /\ cells~[selectedRows]) /\ Cell_value~[{FALSE}] ;
+
+	oneCells(p) == /*{c | c : Cell & cellPort(c) = p 
+				& cells(c) : r & Cell_value(c) = TRUE} ;*/
+			(cellPort~[{p}] /\ cells~[selectedRows]) /\ Cell_value~[{TRUE}] ;
+
+	selectedCells == dom(Cell_selected |> {TRUE}) ;
+	/*selectedRows == {r | r : Row & 
+				not (
+					# t . (t : Row & t /= r & 
+					card(cells~[{r}] /\ selectedCells) < card(cells~[{t}] /\ selectedCells) 
+					)
+				)
+			} ;*/
+	selectedRows == LET cr BE cr = {c,r | r:Row & c= card(cells~[{r}] /\ selectedCells)} IN
+	             LET mx BE mx = max(dom(cr)) IN
+	               cr[{mx}]
+	             END
+	           END;
+	outputCells(r) == cells~[{r}] /\ cellPort~[OutputPort] ;
+			/*{as | as : cells~[{r}] & cellPort(as) : OutputPort} ;*/
+	inputCells(r) == cells~[{r}] /\ cellPort~[InputPort] ;
+			/*{as | as : cells~[{r}] & cellPort(as) : InputPort}*/
+
+VARIABLES
+	branchOne, branchZero, 
+	seqTree, selectedPorts, treePorts, seqLink
+INVARIANT
+	branchOne <: Tree &
+	branchZero <: Tree &
+	seqTree : seq(Tree) &
+	selectedPorts <: Port &
+	treePorts : InputPort <-> Tree &
+	seqLink : seq(BOOL)
+INITIALISATION
+	branchOne := {} ||
+	branchZero := {} ||
+	seqTree := {} ||
+	selectedPorts := {} ||
+	treePorts := {} ||
+	seqLink := {} ||
+	setLastTree(card(Subtree))
+OPERATIONS
+TruthTable2BDD =
+	ANY src WHERE
+		src : TruthTable & src /: BDD
+		/*& printf("~nTruthTable2BDD = ~w~n",[src])*/
+	THEN
+		BDD_NEW(src) ;
+		BddInput_NEW(InputPort) ;
+		BddOutput_NEW(OutputPort)
+	END;
+
+Port2Port =
+	ANY bdd WHERE
+		bdd : BDD & bddPorts~[{bdd}] = {}
+		/*& printf("~n Port2Port = ~w~n",[bdd])*/
+	THEN
+		BDD_Addports(bdd, InputPort \/ OutputPort)
+	END ;
+
+SelectPort = 
+	ANY port WHERE
+		InputPort /= {}
+		& port : BddInput  
+		& port /: cellPort[selectedCells]
+		/*& maxPort(port, selectedRows)*/
+		& ran(seqTree) /\ Leaf = {}
+		& printf("~n SelectPort = ~w~n",[port])
+	THEN
+		SELECT
+			port : selectedPorts
+		THEN
+			seqTree := seqTree <- (treePorts(port))
+		WHEN
+			port /: selectedPorts
+			& not(# portBis . (portBis /: cellPort[selectedCells] 
+					/*& maxPort(portBis, selectedRows) */
+					& portBis : selectedPorts))
+		THEN	
+			Subtree_NEW(port) ;
+			BEGIN
+				selectedPorts := selectedPorts \/ {port} ||			
+				treePorts(port) := lastTree ||
+				seqTree := seqTree <- (lastTree) 
+			END ;
+			IF lastTree = 1 THEN
+				Tree_SetOwnerBDD(lastTree, bddPorts(port))
+			END
+		END ;
+
+		SELECT zeroCells(port) /= {} THEN
+			Cells_SetSelected(zeroCells(port), TRUE) ||
+
+			branchZero := branchZero \/ treePorts[{port}] ||
+
+			seqLink := seqLink <- (FALSE)
+		WHEN oneCells(port) /= {} THEN
+			Cells_SetSelected(oneCells(port), TRUE) ||
+
+			branchOne := branchOne \/ treePorts[{port}] ||
+			
+			seqLink := seqLink <- (TRUE)
+		END 
+END;
+
+setLinks =
+	ANY t1, t2 WHERE 
+		t1 = first(seqTree) & t2 = first(tail(seqTree))
+		& ran(seqTree) /\ Leaf /= {} 
+		& card(seqTree) > 1
+	THEN
+		IF first(seqLink) = TRUE THEN
+			Subtree_SetTreeForOne(t1, t2)||
+			seqLink := tail(seqLink)
+		ELSE
+			Subtree_SetTreeForZero(t1, t2)||
+			seqLink := tail(seqLink)
+		END ||
+		seqTree := tail(seqTree)
+	END;
+
+Continue = 
+	SELECT 
+		card(seqTree) = 1 & ran(seqTree) /\ Leaf /= {}
+	THEN
+		seqTree := tail(seqTree) 
+	END ;
+
+Transform = 
+	ANY row WHERE
+		row : selectedRows
+		& card(selectedRows) = 1
+		& ! cc . (cc : cells~[{row}] & cellPort(cc) /: OutputPort => Cell_selected(cc) = TRUE)
+		& printf("~nTransform with card(Row) = ~w~n",[card(Row)])
+	THEN
+		IF card(outputCells(row)) > card(assignPort[outputCells(row)]) THEN
+			ANY as WHERE as : outputCells(row) & as /: Assignment /*assignOwner[{as}] = {}*/ THEN
+				Assignment_NEW(as, cellPort(as), Cell_value(as))
+			END
+		ELSE	
+			Leaf_NEW ;
+			seqTree := seqTree <- (lastTree) ;
+			Assignments_SetOwner(outputCells(row), lastTree) ;
+			Cells_Free(inputCells(row)\/ outputCells(row)) ;
+			selectedPorts := selectedPorts - {app | app : selectedPorts & treePorts(app) :  (branchZero /\ branchOne)};
+			Row_Free(row)
+		END	
+	END
+END

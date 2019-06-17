@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<probcli-run>
+ <version major="1" minor="9" patch="0" suffix="nightly" revision="8b8974b28c61136e07b15faba7998079adef32bd" lastchanged="Tue Jun 11 15:41:45 2019 +0200" prolog="SICStus 4.5.1 (x86_64-darwin-15.6.0): Tue Apr  2 15:33:59 CEST 2019" />
+ <options>
+  <number>1560542632659</number>
+  <list>
+   <cli_mc>
+    <number>1152921504606846975</number>
+   </cli_mc>
+   <atom>depth_first</atom>
+   <set_preference_group>
+    <atom>time_out</atom>
+    <atom>disable_time_out</atom>
+   </set_preference_group>
+   <atom>no_assertion_violations</atom>
+   <atom>no_invariant_violations</atom>
+   <print_values>
+    <atom>output.probstate</atom>
+   </print_values>
+   <log>
+    <atom>log.xml</atom>
+    <atom>xml</atom>
+   </log>
+  </list>
+ </options>
+ <files>
+  <number>1560542632659</number>
+  <list>
+   <atom>meeduse_tt2bddref.ref</atom>
+  </list>
+ </files>
+ <date year="2019" month="6" day="14" hour="22" minutes="3" seconds="52" />
+ <process_file filename="/Users/idani/git/Meeduse_TTC/meeduse.tt2bdd.sample/tt/meeduse_tt2bddref.ref">
+  <b_machine_preferences>
+   <list>
+    <set_pref>
+     <atom>MAX_DISPLAY_SET</atom>
+     <atom>-1</atom>
+    </set_pref>
+    <set_pref>
+     <atom>DOUBLE_EVALUATION</atom>
+     <atom>FALSE</atom>
+    </set_pref>
+    <set_pref>
+     <atom>SHOW_EVENTB_ANY_VALUES</atom>
+     <atom>TRUE</atom>
+    </set_pref>
+    <set_pref>
+     <atom>MININT</atom>
+     <atom>-128</atom>
+    </set_pref>
+    <set_pref>
+     <atom>MAXINT</atom>
+     <atom>127</atom>
+    </set_pref>
+    <set_pref>
+     <atom>IGNORE_HASH_COLLISIONS</atom>
+     <atom>TRUE</atom>
+    </set_pref>
+    <set_pref>
+     <atom>COMPRESSION</atom>
+     <atom>TRUE</atom>
+    </set_pref>
+    <set_pref>
+     <atom>MAX_OPERATIONS</atom>
+     <atom>1</atom>
+    </set_pref>
+    <set_pref>
+     <atom>TRACE_INFO</atom>
+     <atom>TRUE</atom>
+    </set_pref>
+   </list>
+  </b_machine_preferences>
+  <animation_mode major="b" minor="none" />
+  <b_machine_statistics machine_name="meeduse_tt2bddref" tail_filename="meeduse_tt2bddref.ref" constants="1" variables="36" properties="1" invariants="39" static_assertions="0" dynamic_assertions="0" operations="122" />
+  <model_check max_states="1152921504606846975">
+   <model_checking_options find_deadlocks="1" find_invariant_violations="0" find_goal="1" find_assertion_violations="0" partial_order_reduction="off" partial_guard_evaluation="off" inspect_existing_nodes="1" />
+   <model_checking_statistics result="deadlock" runtime="100146" walltime="106566" states="2559" transitions="2560" />
+   <error_occurred category="deadlock" type="error" message="" />
+   <probcli-errors errors="1" warnings="0" />
+   <statistics walltime="106722" walltime_since_start="127555" memory_used="682489680" />
+  </model_check>
+  <probcli-errors errors="1" warnings="0" />
+  <statistics walltime="126900" walltime_since_start="127864" memory_used="682560512" />
+ </process_file>
+ <probcli-errors errors="1" warnings="0" />
+ <statistics walltime="126927" walltime_since_start="127866" memory_used="682563520" />
+</probcli-run>

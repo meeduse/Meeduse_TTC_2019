@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meeduse_tt2bdd="http://www.example.org/meeduse_tt2bdd">
+  <meeduse_tt2bdd:TruthTable name="TableI5O2Seed5">
+    <ports xsi:type="meeduse_tt2bdd:InputPort" name="I0"/>
+    <ports xsi:type="meeduse_tt2bdd:InputPort" name="I1"/>
+    <ports xsi:type="meeduse_tt2bdd:InputPort" name="I2"/>
+    <ports xsi:type="meeduse_tt2bdd:InputPort" name="I3"/>
+    <ports xsi:type="meeduse_tt2bdd:InputPort" name="I4"/>
+    <ports xsi:type="meeduse_tt2bdd:OutputPort" name="O0"/>
+    <ports xsi:type="meeduse_tt2bdd:OutputPort" name="O1"/>
+  </meeduse_tt2bdd:TruthTable>
+  <meeduse_tt2bdd:BDD name="TableI5O2Seed5">
+    <ports xsi:type="meeduse_tt2bdd:BddInput" name="I0" subtrees="/1/@tree"/>
+    <ports xsi:type="meeduse_tt2bdd:BddInput" name="I1" subtrees="/1/@tree/@treeForZero /1/@tree/@treeForOne"/>
+    <ports xsi:type="meeduse_tt2bdd:BddInput" name="I2" subtrees="/1/@tree/@treeForZero/@treeForZero /1/@tree/@treeForZero/@treeForOne /1/@tree/@treeForOne/@treeForZero /1/@tree/@treeForOne/@treeForOne"/>
+    <ports xsi:type="meeduse_tt2bdd:BddInput" name="I3" subtrees="/1/@tree/@treeForZero/@treeForZero/@treeForZero /1/@tree/@treeForZero/@treeForZero/@treeForOne /1/@tree/@treeForZero/@treeForOne/@treeForZero /1/@tree/@treeForZero/@treeForOne/@treeForOne /1/@tree/@treeForOne/@treeForZero/@treeForZero /1/@tree/@treeForOne/@treeForZero/@treeForOne /1/@tree/@treeForOne/@treeForOne/@treeForZero /1/@tree/@treeForOne/@treeForOne/@treeForOne"/>
+    <ports xsi:type="meeduse_tt2bdd:BddInput" name="I4" subtrees="/1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForZero /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForOne /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForZero /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForOne /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForZero /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForOne /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForZero /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForOne /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForZero /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForOne /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForZero /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForOne /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForZero /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForOne /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForZero /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForOne"/>
+    <ports xsi:type="meeduse_tt2bdd:BddOutput" name="O0" assignments="/1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@assignments.0"/>
+    <ports xsi:type="meeduse_tt2bdd:BddOutput" name="O1" assignments="/1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForOne/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForOne/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@assignments.1 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@assignments.0 /1/@tree/@treeForOne/@treeForOne/@treeForZero/@treeForOne/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@treeForZero/@assignments.0 /1/@tree/@treeForZero/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@assignments.1 /1/@tree/@treeForZero/@treeForZero/@treeForOne/@treeForOne/@treeForZero/@assignments.1"/>
+    <tree xsi:type="meeduse_tt2bdd:Subtree" name="1" port="/1/@ports.0">
+      <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="2" port="/1/@ports.1">
+        <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="3" port="/1/@ports.2">
+          <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="4" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="5" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="6">
+                <assignments name="c_1_7" port="/1/@ports.6"/>
+                <assignments name="c_1_6" value="true" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="7">
+                <assignments name="c_17_6" value="true" port="/1/@ports.5"/>
+                <assignments name="c_17_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="8" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="9">
+                <assignments name="c_9_7" port="/1/@ports.6"/>
+                <assignments name="c_9_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="10">
+                <assignments name="c_25_6" port="/1/@ports.5"/>
+                <assignments name="c_25_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForZero>
+          <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="11" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="12" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="13">
+                <assignments name="c_5_7" port="/1/@ports.6"/>
+                <assignments name="c_5_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="14">
+                <assignments name="c_21_7" port="/1/@ports.6"/>
+                <assignments name="c_21_6" value="true" port="/1/@ports.5"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="15" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="16">
+                <assignments name="c_13_6" value="true" port="/1/@ports.5"/>
+                <assignments name="c_13_7" port="/1/@ports.6"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="17">
+                <assignments name="c_29_6" port="/1/@ports.5"/>
+                <assignments name="c_29_7" value="true" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForOne>
+        </treeForZero>
+        <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="18" port="/1/@ports.2">
+          <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="19" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="20" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="21">
+                <assignments name="c_3_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_3_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="22">
+                <assignments name="c_19_6" port="/1/@ports.5"/>
+                <assignments name="c_19_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="23" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="24">
+                <assignments name="c_11_6" value="true" port="/1/@ports.5"/>
+                <assignments name="c_11_7" port="/1/@ports.6"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="25">
+                <assignments name="c_27_6" port="/1/@ports.5"/>
+                <assignments name="c_27_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForZero>
+          <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="26" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="27" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="28">
+                <assignments name="c_7_7" port="/1/@ports.6"/>
+                <assignments name="c_7_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="29">
+                <assignments name="c_23_6" port="/1/@ports.5"/>
+                <assignments name="c_23_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="30" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="31">
+                <assignments name="c_15_6" port="/1/@ports.5"/>
+                <assignments name="c_15_7" value="true" port="/1/@ports.6"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="32">
+                <assignments name="c_31_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_31_6" port="/1/@ports.5"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForOne>
+        </treeForOne>
+      </treeForZero>
+      <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="33" port="/1/@ports.1">
+        <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="34" port="/1/@ports.2">
+          <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="35" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="36" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="37">
+                <assignments name="c_2_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_2_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="38">
+                <assignments name="c_18_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_18_6" port="/1/@ports.5"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="39" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="40">
+                <assignments name="c_10_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_10_6" value="true" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="41">
+                <assignments name="c_26_6" port="/1/@ports.5"/>
+                <assignments name="c_26_7" value="true" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForZero>
+          <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="42" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="43" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="44">
+                <assignments name="c_6_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_6_6" value="true" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="45">
+                <assignments name="c_22_6" port="/1/@ports.5"/>
+                <assignments name="c_22_7" value="true" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="46" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="47">
+                <assignments name="c_14_7" port="/1/@ports.6"/>
+                <assignments name="c_14_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="48">
+                <assignments name="c_30_6" value="true" port="/1/@ports.5"/>
+                <assignments name="c_30_7" value="true" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForOne>
+        </treeForZero>
+        <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="49" port="/1/@ports.2">
+          <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="50" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="51" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="52">
+                <assignments name="c_4_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_4_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="53">
+                <assignments name="c_20_6" value="true" port="/1/@ports.5"/>
+                <assignments name="c_20_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="54" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="55">
+                <assignments name="c_12_7" port="/1/@ports.6"/>
+                <assignments name="c_12_6" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="56">
+                <assignments name="c_28_7" port="/1/@ports.6"/>
+                <assignments name="c_28_6" port="/1/@ports.5"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForZero>
+          <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="57" port="/1/@ports.3">
+            <treeForZero xsi:type="meeduse_tt2bdd:Subtree" name="58" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="59">
+                <assignments name="c_8_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_8_6" value="true" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="60">
+                <assignments name="c_24_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_24_6" value="true" port="/1/@ports.5"/>
+              </treeForOne>
+            </treeForZero>
+            <treeForOne xsi:type="meeduse_tt2bdd:Subtree" name="61" port="/1/@ports.4">
+              <treeForZero xsi:type="meeduse_tt2bdd:Leaf" name="62">
+                <assignments name="c_16_7" value="true" port="/1/@ports.6"/>
+                <assignments name="c_16_6" value="true" port="/1/@ports.5"/>
+              </treeForZero>
+              <treeForOne xsi:type="meeduse_tt2bdd:Leaf" name="63">
+                <assignments name="c_32_6" port="/1/@ports.5"/>
+                <assignments name="c_32_7" port="/1/@ports.6"/>
+              </treeForOne>
+            </treeForOne>
+          </treeForOne>
+        </treeForOne>
+      </treeForOne>
+    </tree>
+  </meeduse_tt2bdd:BDD>
+</xmi:XMI>

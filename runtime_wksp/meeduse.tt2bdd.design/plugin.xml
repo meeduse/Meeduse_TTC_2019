@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="meeduse.tt2bdd.design.Activator"
+               id="meeduse.tt2bdd.design"
+	       name="tt2bdd">
+    </component>
+  </extension>
+</plugin>

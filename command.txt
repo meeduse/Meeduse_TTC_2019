@@ -1,0 +1,19 @@
+* After generating the B specifications from an input model, you can run the 
+ProB model-checker in order to find deadlocks, invariant violations, reachable 
+states, counter examples of LTL formulas, etc. This gives a formal proof about 
+the correctness of the transformation given an input model. A demonstration is 
+given in video "model_checking.mov".
+
+* In order to run ProB, you can use the following command inside the folder of 
+the input model. Replace  {ProB_Home} by the folder where you extracted the 
+prob zip file. 
+
+{ProB_Home}/probcli -model_check -df -disable_time_out meeduse_tt2bddref.ref -noass -noinv -sptxt output.probstate -logxml log.xml
+
+ProB can be downloaded from: 
+
+    https://www3.hhu.de/stups/downloads/prob/tcltk/nightly/
+    
+* You can find the ProB command line documentation on: 
+
+    https://www3.hhu.de/stups/prob/index.php/Using_the_Command-Line_Version_of_ProB

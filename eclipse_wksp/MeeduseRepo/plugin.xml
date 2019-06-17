@@ -1,0 +1,80 @@
+
+<plugin>
+
+ 
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            description="Transform TT model to Meeduse"
+            id="fr.liglab.vasco.meeduse.tt2meeduse"
+            name="transform">
+      </command>
+ 	</extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="meeduse_tt2bdd.tools.Adapter$TTImporter$Command"
+            commandId="fr.liglab.vasco.meeduse.tt2meeduse">
+      </handler>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            description="Transform Meeduse model to BDD"
+            id="fr.liglab.vasco.meeduse.meeduse2bdd"
+            name="transform">
+      </command>
+ 	</extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="meeduse_tt2bdd.tools.Adapter$BDDExporter$Command"
+            commandId="fr.liglab.vasco.meeduse.meeduse2bdd">
+      </handler>
+   </extension>
+ 	
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+               <menu
+                     icon="icons/full/obj16/transform-2-meeduse.gif"
+                     id="fr.liglab.vasco.meeduse.transformation.menu"
+                     label="Transform to/from Meeduse">
+                  <command
+                        commandId="fr.liglab.vasco.meeduse.tt2meeduse"
+                        icon="icons/full/obj16/transform-2-meeduse.gif"
+                        label="Transform TruthTable model"
+                        style="push"
+                        tooltip="Transform TruthTable model">
+                     <visibleWhen checkEnabled="false">
+						<with variable="activeMenuSelection">
+							<iterate ifEmpty="false">
+								<adapt type="org.eclipse.core.resources.IFile">
+									<test property="org.eclipse.core.resources.extension" value="ttmodel" />
+								</adapt>
+							</iterate>
+			           </with>
+                       </visibleWhen>
+                  </command>
+                  <command
+                        commandId="fr.liglab.vasco.meeduse.meeduse2bdd"
+                        icon="icons/full/obj16/transform-2-meeduse.gif"
+                        label="Transform meeduse model to BDD"
+                        style="push"
+                        tooltip="Transform meeduse model to BDD">
+                     <visibleWhen checkEnabled="false">
+						<with variable="activeMenuSelection">
+							<iterate ifEmpty="false">
+								<adapt type="org.eclipse.core.resources.IFile">
+									<test property="org.eclipse.core.resources.extension" value="meeduse_tt2bdd" />
+								</adapt>
+							</iterate>
+			           </with>
+                       </visibleWhen>
+                  </command>
+               </menu>
+      </menuContribution>
+   </extension>
+</plugin>

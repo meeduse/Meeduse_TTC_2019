@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated meeduse_tt2bdd -->
+      <package
+            uri="http://www.example.org/meeduse_tt2bdd"
+            class="meeduse_tt2bdd.Meeduse_tt2bddPackage"
+            genModel="model/meeduse_tt2bdd.genmodel"/>
+   </extension>
+
+</plugin>

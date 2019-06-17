@@ -1,0 +1,30 @@
+REFINEMENT
+	meeduse_tt2bddref
+REFINES
+	meeduse_tt2bddmain
+INCLUDES
+	meeduse_tt2bdd
+
+OPERATIONS
+Sovle =
+	ANY
+		genBDD/*, genTree, genSubtree*/
+	WHERE
+		/* Typing */
+		genBDD 		: Element /*&
+		genTree 	<: NAT &
+		genSubtree 	<: NAT */&
+		/* Linkage */
+		genBDD : TruthTable
+	THEN
+		BDD_NEW(genBDD)
+	END;
+
+reduce =
+	BEGIN
+		skip
+	END 
+
+END
+
+

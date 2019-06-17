@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="ASCII"?>
+<bmethod:BSpec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bmethod="http://fr.liglab.vasco/b4msecure/2.0/models/bmethod" systemMachine="//@machines.0">
+  <machines name="meeduse_tt2bdd">
+    <data xsi:type="bmethod:BAbstractSet" name="ELEMENT" typing="//@machines.0/@operations.0/@param.0 //@machines.0/@operations.1/@param.0 //@machines.0/@operations.2/@param.0 //@machines.0/@operations.4/@param.0 //@machines.0/@operations.5/@param.0 //@machines.0/@operations.7/@param.0 //@machines.0/@operations.8/@param.0 //@machines.0/@operations.9/@param.0 //@machines.0/@operations.10/@param.0"/>
+    <data xsi:type="bmethod:BAbstractSet" name="TREE" typing="//@machines.0/@operations.3/@param.0 //@machines.0/@operations.6/@param.0"/>
+    <data xsi:type="bmethod:BVariable" name="Element" type="//@sharedTypes.2" typing="//@machines.0/@data.4 //@machines.0/@data.5 //@machines.0/@data.6 //@machines.0/@data.7 //@machines.0/@data.9 //@machines.0/@data.10 //@machines.0/@data.11">
+      <typingPredicate operator="In" type="//@sharedTypes.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Tree" type="//@sharedTypes.4" typing="//@machines.0/@data.8 //@machines.0/@data.12 //@machines.0/@operations.3/@param.1 //@machines.0/@operations.3/@param.2 //@machines.0/@operations.33/@param.0 //@machines.0/@operations.34/@param.0 //@machines.0/@operations.35/@param.0 //@machines.0/@operations.52/@param.1 //@machines.0/@operations.53/@param.1 //@machines.0/@operations.55/@param.0 //@machines.0/@operations.56/@param.0 //@machines.0/@operations.57/@param.0 //@machines.0/@operations.59/@param.1 //@machines.0/@operations.67/@param.0 //@machines.0/@operations.68/@param.0 //@machines.0/@operations.69/@param.0 //@machines.0/@operations.87/@param.0 //@machines.0/@operations.88/@param.0 //@machines.0/@operations.89/@param.0 //@machines.0/@operations.91/@param.1">
+      <typingPredicate operator="In" type="//@sharedTypes.4"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Port" type="//@machines.0/@data.2" typing="//@machines.0/@data.13 //@machines.0/@data.14 //@machines.0/@operations.2/@param.2 //@machines.0/@operations.22/@param.0 //@machines.0/@operations.23/@param.0 //@machines.0/@operations.44/@param.0 //@machines.0/@operations.45/@param.0 //@machines.0/@operations.51/@param.1 //@machines.0/@operations.66/@param.0 //@machines.0/@operations.75/@param.0 //@machines.0/@operations.76/@param.1 //@machines.0/@operations.83/@param.0 //@machines.0/@operations.84/@param.1">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="TruthTable" type="//@machines.0/@data.2" typing="//@machines.0/@operations.11/@param.0 //@machines.0/@operations.7/@param.1 //@machines.0/@operations.8/@param.1 //@machines.0/@operations.1/@param.1 //@machines.0/@operations.24/@param.0 //@machines.0/@operations.25/@param.0 //@machines.0/@operations.44/@param.1 //@machines.0/@operations.46/@param.0 //@machines.0/@operations.47/@param.0 //@machines.0/@operations.48/@param.1 //@machines.0/@operations.76/@param.0 //@machines.0/@operations.77/@param.0 //@machines.0/@operations.84/@param.0 //@machines.0/@operations.85/@param.0">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Row" type="//@machines.0/@data.2" typing="//@machines.0/@operations.12/@param.0 //@machines.0/@operations.2/@param.1 //@machines.0/@operations.26/@param.0 //@machines.0/@operations.27/@param.0 //@machines.0/@operations.48/@param.0 //@machines.0/@operations.49/@param.0 //@machines.0/@operations.50/@param.1 //@machines.0/@operations.77/@param.1 //@machines.0/@operations.78/@param.0 //@machines.0/@operations.85/@param.1 //@machines.0/@operations.86/@param.0">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Cell" type="//@machines.0/@data.2" typing="//@machines.0/@operations.13/@param.0 //@machines.0/@operations.28/@param.0 //@machines.0/@operations.29/@param.0 //@machines.0/@operations.50/@param.0 //@machines.0/@operations.51/@param.0 //@machines.0/@operations.75/@param.1 //@machines.0/@operations.78/@param.1 //@machines.0/@operations.83/@param.1 //@machines.0/@operations.86/@param.1 //@machines.0/@operations.96/@param.0 //@machines.0/@operations.97/@param.0 //@machines.0/@operations.98/@param.0 //@machines.0/@operations.100/@param.0 //@machines.0/@operations.101/@param.0 //@machines.0/@operations.102/@param.0 //@machines.0/@operations.104/@param.0 //@machines.0/@operations.105/@param.0 //@machines.0/@operations.106/@param.0 //@machines.0/@operations.107/@param.0">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Subtree" type="//@machines.0/@data.3" typing="//@machines.0/@operations.14/@param.0 //@machines.0/@operations.30/@param.0 //@machines.0/@operations.31/@param.0 //@machines.0/@operations.32/@param.0 //@machines.0/@operations.52/@param.0 //@machines.0/@operations.53/@param.0 //@machines.0/@operations.54/@param.0 //@machines.0/@operations.56/@param.1 //@machines.0/@operations.57/@param.1 //@machines.0/@operations.80/@param.1 //@machines.0/@operations.88/@param.1 //@machines.0/@operations.89/@param.1 //@machines.0/@operations.93/@param.1">
+      <typingPredicate type="//@machines.0/@data.3"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="BDD" type="//@machines.0/@data.2" typing="//@machines.0/@operations.15/@param.0 //@machines.0/@operations.36/@param.0 //@machines.0/@operations.37/@param.0 //@machines.0/@operations.55/@param.1 //@machines.0/@operations.58/@param.0 //@machines.0/@operations.59/@param.0 //@machines.0/@operations.60/@param.1 //@machines.0/@operations.70/@param.0 //@machines.0/@operations.71/@param.0 //@machines.0/@operations.79/@param.0 //@machines.0/@operations.87/@param.1 //@machines.0/@operations.90/@param.0 //@machines.0/@operations.91/@param.0 //@machines.0/@operations.92/@param.1">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="BdP" type="//@machines.0/@data.2" typing="//@machines.0/@data.15 //@machines.0/@data.16 //@machines.0/@operations.38/@param.0 //@machines.0/@operations.60/@param.0 //@machines.0/@operations.72/@param.0 //@machines.0/@operations.79/@param.1 //@machines.0/@operations.90/@param.1 //@machines.0/@operations.92/@param.0">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Assignment" type="//@machines.0/@data.2" typing="//@machines.0/@operations.16/@param.0 //@machines.0/@operations.40/@param.0 //@machines.0/@operations.41/@param.0 //@machines.0/@operations.62/@param.0 //@machines.0/@operations.63/@param.0 //@machines.0/@operations.81/@param.1 //@machines.0/@operations.82/@param.1 //@machines.0/@operations.94/@param.1 //@machines.0/@operations.95/@param.1 //@machines.0/@operations.99/@param.0 //@machines.0/@operations.103/@param.0">
+      <typingPredicate type="//@machines.0/@data.2"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Leaf" type="//@machines.0/@data.3" typing="//@machines.0/@operations.17/@param.0 //@machines.0/@operations.5/@param.2 //@machines.0/@operations.43/@param.0 //@machines.0/@operations.63/@param.1 //@machines.0/@operations.65/@param.0 //@machines.0/@operations.82/@param.0 //@machines.0/@operations.95/@param.0">
+      <typingPredicate type="//@machines.0/@data.3"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="InputPort" type="//@machines.0/@data.4" typing="//@machines.0/@operations.18/@param.0">
+      <typingPredicate type="//@machines.0/@data.4"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="OutputPort" type="//@machines.0/@data.4" typing="//@machines.0/@operations.19/@param.0">
+      <typingPredicate type="//@machines.0/@data.4"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="BddInput" type="//@machines.0/@data.10" typing="//@machines.0/@operations.20/@param.0 //@machines.0/@operations.3/@param.3 //@machines.0/@operations.39/@param.0 //@machines.0/@operations.54/@param.1 //@machines.0/@operations.61/@param.0 //@machines.0/@operations.73/@param.0 //@machines.0/@operations.80/@param.0 //@machines.0/@operations.93/@param.0">
+      <typingPredicate type="//@machines.0/@data.10"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="BddOutput" type="//@machines.0/@data.10" typing="//@machines.0/@operations.21/@param.0 //@machines.0/@operations.5/@param.1 //@machines.0/@operations.42/@param.0 //@machines.0/@operations.62/@param.1 //@machines.0/@operations.64/@param.0 //@machines.0/@operations.74/@param.0 //@machines.0/@operations.81/@param.0 //@machines.0/@operations.94/@param.0">
+      <typingPredicate type="//@machines.0/@data.10"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="ttPorts" type="//@sharedTypes.5">
+      <typingPredicate operator="In" type="//@sharedTypes.5"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="rows" type="//@sharedTypes.6">
+      <typingPredicate operator="In" type="//@sharedTypes.6"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="cells" type="//@sharedTypes.7">
+      <typingPredicate operator="In" type="//@sharedTypes.7"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="cellPort" type="//@sharedTypes.8">
+      <typingPredicate operator="In" type="//@sharedTypes.8"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="bddPorts" type="//@sharedTypes.9">
+      <typingPredicate operator="In" type="//@sharedTypes.9"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="treeOwner" type="//@sharedTypes.10">
+      <typingPredicate operator="In" type="//@sharedTypes.10"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="treeForZero" type="//@sharedTypes.11">
+      <typingPredicate operator="In" type="//@sharedTypes.11"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="treeForOne" type="//@sharedTypes.12">
+      <typingPredicate operator="In" type="//@sharedTypes.12"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="subtreePorts" type="//@sharedTypes.13">
+      <typingPredicate operator="In" type="//@sharedTypes.13"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="assignPort" type="//@sharedTypes.14">
+      <typingPredicate operator="In" type="//@sharedTypes.14"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="assignOwner" type="//@sharedTypes.15">
+      <typingPredicate operator="In" type="//@sharedTypes.15"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Cell_value" type="//@sharedTypes.16">
+      <typingPredicate operator="In" type="//@sharedTypes.16"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Cell_done" type="//@sharedTypes.17">
+      <typingPredicate operator="In" type="//@sharedTypes.17"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Cell_selected" type="//@sharedTypes.18">
+      <typingPredicate operator="In" type="//@sharedTypes.18"/>
+    </data>
+    <data xsi:type="bmethod:BVariable" name="Assignment_value" type="//@sharedTypes.19">
+      <typingPredicate operator="In" type="//@sharedTypes.19"/>
+    </data>
+    <invariant body="Row /\ BdP = {}"/>
+    <invariant body="Row /\ TruthTable = {}"/>
+    <invariant body="Row /\ Cell = {}"/>
+    <invariant body="Row /\ Port = {}"/>
+    <invariant body="Row /\ BDD = {}"/>
+    <invariant body="Row /\ Assignment = {}"/>
+    <invariant body="BdP /\ TruthTable = {}"/>
+    <invariant body="BdP /\ Cell = {}"/>
+    <invariant body="BdP /\ Port = {}"/>
+    <invariant body="BdP /\ BDD = {}"/>
+    <invariant body="BdP /\ Assignment = {}"/>
+    <invariant body="TruthTable /\ Cell = {}"/>
+    <invariant body="TruthTable /\ Port = {}"/>
+    <invariant body="TruthTable /\ BDD = {}"/>
+    <invariant body="TruthTable /\ Assignment = {}"/>
+    <invariant body="Cell /\ Port = {}"/>
+    <invariant body="Cell /\ BDD = {}"/>
+    <invariant body="Cell /\ Assignment = {}"/>
+    <invariant body="Port /\ BDD = {}"/>
+    <invariant body="Port /\ Assignment = {}"/>
+    <invariant body="BDD /\ Assignment = {}"/>
+    <invariant body="Subtree /\ Leaf = {}"/>
+    <invariant body="InputPort /\ OutputPort = {}"/>
+    <invariant body="BddOutput /\ BddInput = {}"/>
+    <invariant body="!owner.( owner : ran(ttPorts) => ttPorts~[{owner}] /= {})"/>
+    <invariant body="!owner.( owner : ran(rows) => card(rows~[{owner}]) >= 2)"/>
+    <invariant body="!owner.( owner : ran(cells) => cells~[{owner}] /= {})"/>
+    <invariant body="!owner.( owner : ran(assignOwner) => assignOwner~[{owner}] /= {})"/>
+    <operations name="TruthTable_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.5">
+            <value name="TruthTable \/ {aTruthTable}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aTruthTable}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="ttPorts \/ (thePorts * {aTruthTable})"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="rows \/ (theRows * {aTruthTable})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aTruthTable /: Element"/>
+          <typingPredicate body="thePorts /= {}"/>
+          <typingPredicate body="!aPorts.( aPorts : thePorts => ttPorts[{aPorts}] = {})"/>
+          <typingPredicate body="card(theRows) >= 2"/>
+          <typingPredicate body="!aRows.( aRows : theRows => rows[{aRows}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+      <param name="thePorts" type="//@sharedTypes.20">
+        <typingPredicate operator="In" type="//@sharedTypes.20"/>
+      </param>
+      <param name="theRows" type="//@sharedTypes.21">
+        <typingPredicate operator="In" type="//@sharedTypes.21"/>
+      </param>
+    </operations>
+    <operations name="Row_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.6">
+            <value name="Row \/ {aRow}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aRow}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="rows \/ {(aRow |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="cells \/ (theCells * {aRow})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aRow /: Element"/>
+          <typingPredicate body="theCells /= {}"/>
+          <typingPredicate body="!aCells.( aCells : theCells => cells[{aCells}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="theCells" type="//@sharedTypes.22">
+        <typingPredicate operator="In" type="//@sharedTypes.22"/>
+      </param>
+    </operations>
+    <operations name="Cell_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.7">
+            <value name="Cell \/ {aCell}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aCell}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="cells \/ {(aCell |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="cellPort \/ {(aCell |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.28">
+            <value name="Cell_value \/ {(aCell |-> aValue)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aCell /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+      <param name="aValue" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Subtree_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.8">
+            <value name="Subtree \/ {aSubtree}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.3">
+            <value name="Tree \/ {aSubtree}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="treeForZero \/ {(aSubtree |-> aTreeForZero)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="treeForOne \/ {(aSubtree |-> aTreeForOne)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="subtreePorts \/ {(aSubtree |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aSubtree /: Tree"/>
+          <typingPredicate body="treeForZero~[{aTreeForZero}] = {}"/>
+          <typingPredicate body="treeForOne~[{aTreeForOne}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.1">
+        <typingPredicate operator="In" type="//@machines.0/@data.1"/>
+      </param>
+      <param name="aTreeForZero" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aTreeForOne" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aPort" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+    </operations>
+    <operations name="BDD_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.9">
+            <value name="BDD \/ {aBDD}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aBDD}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBDD /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+    </operations>
+    <operations name="Assignment_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.11">
+            <value name="Assignment \/ {aAssignment}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aAssignment}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="assignPort \/ {(aAssignment |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="assignOwner \/ {(aAssignment |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.31">
+            <value name="Assignment_value \/ {(aAssignment |-> aValue)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aAssignment /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+      <param name="aPort" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+      <param name="aValue" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Leaf_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.12">
+            <value name="Leaf \/ {aLeaf}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.3">
+            <value name="Tree \/ {aLeaf}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="assignOwner \/ (theAssignments * {aLeaf})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aLeaf /: Tree"/>
+          <typingPredicate body="theAssignments /= {}"/>
+          <typingPredicate body="!aAssignments.( aAssignments : theAssignments => assignOwner[{aAssignments}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aLeaf" type="//@machines.0/@data.1">
+        <typingPredicate operator="In" type="//@machines.0/@data.1"/>
+      </param>
+      <param name="theAssignments" type="//@sharedTypes.23">
+        <typingPredicate operator="In" type="//@sharedTypes.23"/>
+      </param>
+    </operations>
+    <operations name="InputPort_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.13">
+            <value name="InputPort \/ {aInputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aInputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.4">
+            <value name="Port \/ {aInputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="ttPorts \/ {(aInputPort |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aInputPort /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aInputPort" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="OutputPort_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.14">
+            <value name="OutputPort \/ {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.4">
+            <value name="Port \/ {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="ttPorts \/ {(aOutputPort |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aOutputPort /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aOutputPort" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="BddInput_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.15">
+            <value name="BddInput \/ {aBddInput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.10">
+            <value name="BdP \/ {aBddInput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aBddInput}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBddInput /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_NEW">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.16">
+            <value name="BddOutput \/ {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.10">
+            <value name="BdP \/ {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element \/ {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBddOutput /: Element"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.0">
+        <typingPredicate operator="In" type="//@machines.0/@data.0"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.5">
+            <value name="TruthTable - {aTruthTable}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aTruthTable}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="ttPorts |>> {aTruthTable}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="rows |>> {aTruthTable}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="ttPorts~[{aTruthTable}] = {}"/>
+          <typingPredicate body="rows~[{aTruthTable}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="Row_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.6">
+            <value name="Row - {aRow}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aRow}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="{aRow} &lt;&lt;| rows"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="cells |>> {aRow}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="!owner.( owner : rows[{aRow}] => card(rows~[{owner}]) >= 3)"/>
+          <typingPredicate body="cells~[{aRow}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+    </operations>
+    <operations name="Cell_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.7">
+            <value name="Cell - {aCell}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aCell}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="{aCell} &lt;&lt;| cells"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="{aCell} &lt;&lt;| cellPort"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.28">
+            <value name="{aCell} &lt;&lt;| Cell_value"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.29">
+            <value name="{aCell} &lt;&lt;| Cell_done"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.30">
+            <value name="{aCell} &lt;&lt;| Cell_selected"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="!owner.( owner : cells[{aCell}] => card(cells~[{owner}]) >= 2)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Subtree_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.8">
+            <value name="Subtree - {aSubtree}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.3">
+            <value name="Tree - {aSubtree}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="{aSubtree} &lt;&lt;| (treeForZero |>> {aSubtree})"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="{aSubtree} &lt;&lt;| (treeForOne |>> {aSubtree})"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="{aSubtree} &lt;&lt;| subtreePorts"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="{aSubtree} &lt;&lt;| treeOwner"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="treeForZero~[{aSubtree}] = {}"/>
+          <typingPredicate body="treeForOne~[{aSubtree}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="BDD_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.9">
+            <value name="BDD - {aBDD}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aBDD}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="bddPorts |>> {aBDD}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="treeOwner |>> {aBDD}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="Assignment_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.11">
+            <value name="Assignment - {aAssignment}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aAssignment}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="{aAssignment} &lt;&lt;| assignPort"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="{aAssignment} &lt;&lt;| assignOwner"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.31">
+            <value name="{aAssignment} &lt;&lt;| Assignment_value"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="!owner.( owner : assignOwner[{aAssignment}] => card(assignOwner~[{owner}]) >= 2)"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Leaf_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.12">
+            <value name="Leaf - {aLeaf}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.3">
+            <value name="Tree - {aLeaf}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="{aLeaf} &lt;&lt;| treeOwner"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="treeForZero |>> {aLeaf}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="treeForOne |>> {aLeaf}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="assignOwner |>> {aLeaf}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="treeForZero~[{aLeaf}] = {}"/>
+          <typingPredicate body="treeForOne~[{aLeaf}] = {}"/>
+          <typingPredicate body="assignOwner~[{aLeaf}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aLeaf" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+    </operations>
+    <operations name="InputPort_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.13">
+            <value name="InputPort - {aInputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aInputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.4">
+            <value name="Port - {aInputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="{aInputPort} &lt;&lt;| ttPorts"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="cellPort |>> {aInputPort}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="!owner.( owner : ttPorts[{aInputPort}] => card(ttPorts~[{owner}]) >= 2)"/>
+          <typingPredicate body="cellPort~[{aInputPort}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aInputPort" type="//@machines.0/@data.13">
+        <typingPredicate operator="In" type="//@machines.0/@data.13"/>
+      </param>
+    </operations>
+    <operations name="OutputPort_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.14">
+            <value name="OutputPort - {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.4">
+            <value name="Port - {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="{aOutputPort} &lt;&lt;| ttPorts"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="cellPort |>> {aOutputPort}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="!owner.( owner : ttPorts[{aOutputPort}] => card(ttPorts~[{owner}]) >= 2)"/>
+          <typingPredicate body="cellPort~[{aOutputPort}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aOutputPort" type="//@machines.0/@data.14">
+        <typingPredicate operator="In" type="//@machines.0/@data.14"/>
+      </param>
+    </operations>
+    <operations name="BddInput_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.15">
+            <value name="BddInput - {aBddInput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.10">
+            <value name="BdP - {aBddInput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aBddInput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="{aBddInput} &lt;&lt;| bddPorts"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="subtreePorts |>> {aBddInput}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="subtreePorts~[{aBddInput}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_Free">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.16">
+            <value name="BddOutput - {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.10">
+            <value name="BdP - {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.2">
+            <value name="Element - {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="{aBddOutput} &lt;&lt;| bddPorts"/>
+          </expression>
+        </substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="assignPort |>> {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="assignPort~[{aBddOutput}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+    </operations>
+    <operations name="Port_GetOwner">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := ttPorts(aPort)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aPort : dom(ttPorts)"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+    </operations>
+    <operations name="Port_GetCells">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := cellPort~[{aPort}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aPort : ran(cellPort)"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_GetPorts">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := ttPorts~[{aTruthTable}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aTruthTable : ran(ttPorts)"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_GetRows">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := rows~[{aTruthTable}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aTruthTable : ran(rows)"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="Row_GetOwner">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := rows(aRow)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aRow : dom(rows)"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+    </operations>
+    <operations name="Row_GetCells">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := cells~[{aRow}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aRow : ran(cells)"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+    </operations>
+    <operations name="Cell_GetOwner">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := cells(aCell)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aCell : dom(cells)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Cell_GetPort">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := cellPort(aCell)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aCell : dom(cellPort)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Subtree_GetTreeForZero">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := treeForZero(aSubtree)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aSubtree : dom(treeForZero)"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="Subtree_GetTreeForOne">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := treeForOne(aSubtree)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aSubtree : dom(treeForOne)"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="Subtree_GetPort">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := subtreePorts(aSubtree)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aSubtree : dom(subtreePorts)"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="Tree_GetOwnerBDD">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := treeOwner(aTree)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aTree : dom(treeOwner)"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="Tree_GetOwnerSubtreeForZero">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := treeForZero~(aTree)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aTree : ran(treeForZero)"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="Tree_GetOwnerSubtreeForOne">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := treeForOne~(aTree)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aTree : ran(treeForOne)"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="BDD_GetPorts">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := bddPorts~[{aBDD}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBDD : ran(bddPorts)"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="BDD_GetTree">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := treeOwner~(aBDD)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBDD : ran(treeOwner)"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="BdP_GetOwner">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := bddPorts(aBdP)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBdP : dom(bddPorts)"/>
+        </precondition>
+      </substitution>
+      <param name="aBdP" type="//@machines.0/@data.10">
+        <typingPredicate operator="In" type="//@machines.0/@data.10"/>
+      </param>
+    </operations>
+    <operations name="BddInput_GetSubtrees">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := subtreePorts~[{aBddInput}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBddInput : ran(subtreePorts)"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+    </operations>
+    <operations name="Assignment_GetPort">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := assignPort(aAssignment)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aAssignment : dom(assignPort)"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Assignment_GetOwner">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := assignOwner(aAssignment)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aAssignment : dom(assignOwner)"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_GetAssignments">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := assignPort~[{aBddOutput}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aBddOutput : ran(assignPort)"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+    </operations>
+    <operations name="Leaf_GetAssignments">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := assignOwner~[{aLeaf}]"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aLeaf : ran(assignOwner)"/>
+        </precondition>
+      </substitution>
+      <param name="aLeaf" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+    </operations>
+    <operations name="Port_SetOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="({aPort} &lt;&lt;| ttPorts) \/ {(aPort |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aPort |-> aOwner)} /&lt;: ttPorts"/>
+          <typingPredicate body="!removed.( removed : ttPorts[{aPort}] => card(ttPorts~[{removed}]) >= 2)"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="Port_SetCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="(cellPort |>> {aPort}) \/ (theCells * {aPort})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(theCells * {aPort}) /&lt;: cellPort"/>
+          <typingPredicate body="cellPort~[{aPort}] = {}"/>
+          <typingPredicate body="!added.( added : theCells => cellPort[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+      <param name="theCells" type="//@sharedTypes.22">
+        <typingPredicate operator="In" type="//@sharedTypes.22"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_SetPorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="(ttPorts |>> {aTruthTable}) \/ (thePorts * {aTruthTable})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(thePorts * {aTruthTable}) /&lt;: ttPorts"/>
+          <typingPredicate body="ttPorts~[{aTruthTable}] = {}"/>
+          <typingPredicate body="thePorts /= {}"/>
+          <typingPredicate body="!added.( added : thePorts => ttPorts[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="thePorts" type="//@sharedTypes.20">
+        <typingPredicate operator="In" type="//@sharedTypes.20"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_SetRows">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="(rows |>> {aTruthTable}) \/ (theRows * {aTruthTable})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(theRows * {aTruthTable}) /&lt;: rows"/>
+          <typingPredicate body="rows~[{aTruthTable}] = {}"/>
+          <typingPredicate body="card(theRows) >= 2"/>
+          <typingPredicate body="!added.( added : theRows => rows[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="theRows" type="//@sharedTypes.21">
+        <typingPredicate operator="In" type="//@sharedTypes.21"/>
+      </param>
+    </operations>
+    <operations name="Row_SetOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="({aRow} &lt;&lt;| rows) \/ {(aRow |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aRow |-> aOwner)} /&lt;: rows"/>
+          <typingPredicate body="!removed.( removed : rows[{aRow}] => card(rows~[{removed}]) >= 3)"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+    </operations>
+    <operations name="Row_SetCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="(cells |>> {aRow}) \/ (theCells * {aRow})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(theCells * {aRow}) /&lt;: cells"/>
+          <typingPredicate body="cells~[{aRow}] = {}"/>
+          <typingPredicate body="theCells /= {}"/>
+          <typingPredicate body="!added.( added : theCells => cells[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+      <param name="theCells" type="//@sharedTypes.22">
+        <typingPredicate operator="In" type="//@sharedTypes.22"/>
+      </param>
+    </operations>
+    <operations name="Cell_SetOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="({aCell} &lt;&lt;| cells) \/ {(aCell |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aCell |-> aOwner)} /&lt;: cells"/>
+          <typingPredicate body="!removed.( removed : cells[{aCell}] => card(cells~[{removed}]) >= 2)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+    </operations>
+    <operations name="Cell_SetPort">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="({aCell} &lt;&lt;| cellPort) \/ {(aCell |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aCell |-> aPort)} /&lt;: cellPort"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+    </operations>
+    <operations name="Subtree_SetTreeForZero">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="({aSubtree} &lt;&lt;| treeForZero) \/ {(aSubtree |-> aTreeForZero)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aSubtree |-> aTreeForZero)} /&lt;: treeForZero"/>
+          <typingPredicate body="!added.( added : {aTreeForZero} => treeForZero~[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+      <param name="aTreeForZero" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="Subtree_SetTreeForOne">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="({aSubtree} &lt;&lt;| treeForOne) \/ {(aSubtree |-> aTreeForOne)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aSubtree |-> aTreeForOne)} /&lt;: treeForOne"/>
+          <typingPredicate body="!added.( added : {aTreeForOne} => treeForOne~[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+      <param name="aTreeForOne" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="Subtree_SetPort">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="({aSubtree} &lt;&lt;| subtreePorts) \/ {(aSubtree |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aSubtree |-> aPort)} /&lt;: subtreePorts"/>
+        </precondition>
+      </substitution>
+      <param name="aSubtree" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+      <param name="aPort" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+    </operations>
+    <operations name="Tree_SetOwnerBDD">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="({aTree} &lt;&lt;| treeOwner) \/ {(aTree |-> aOwnerBDD)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aTree |-> aOwnerBDD)} /&lt;: treeOwner"/>
+          <typingPredicate body="!added.( added : {aOwnerBDD} => treeOwner~[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aOwnerBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="Tree_SetOwnerSubtreeForZero">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="(treeForZero |>> {aTree}) \/ {(aOwnerSubtreeForZero |-> aTree)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aOwnerSubtreeForZero |-> aTree)} /&lt;: treeForZero"/>
+          <typingPredicate body="treeForZero~[{aTree}] = {}"/>
+          <typingPredicate body="!added.( added : {aOwnerSubtreeForZero} => treeForZero[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aOwnerSubtreeForZero" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="Tree_SetOwnerSubtreeForOne">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="(treeForOne |>> {aTree}) \/ {(aOwnerSubtreeForOne |-> aTree)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aOwnerSubtreeForOne |-> aTree)} /&lt;: treeForOne"/>
+          <typingPredicate body="treeForOne~[{aTree}] = {}"/>
+          <typingPredicate body="!added.( added : {aOwnerSubtreeForOne} => treeForOne[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aOwnerSubtreeForOne" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="BDD_SetPorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="(bddPorts |>> {aBDD}) \/ (thePorts * {aBDD})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(thePorts * {aBDD}) /&lt;: bddPorts"/>
+          <typingPredicate body="!added.( added : thePorts => bddPorts[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+      <param name="thePorts" type="//@sharedTypes.24">
+        <typingPredicate operator="In" type="//@sharedTypes.24"/>
+      </param>
+    </operations>
+    <operations name="BDD_SetTree">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="(treeOwner |>> {aBDD}) \/ {(aTree |-> aBDD)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aTree |-> aBDD)} /&lt;: treeOwner"/>
+          <typingPredicate body="!added.( added : {aTree} => treeOwner[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="BdP_SetOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="({aBdP} &lt;&lt;| bddPorts) \/ {(aBdP |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aBdP |-> aOwner)} /&lt;: bddPorts"/>
+        </precondition>
+      </substitution>
+      <param name="aBdP" type="//@machines.0/@data.10">
+        <typingPredicate operator="In" type="//@machines.0/@data.10"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="BddInput_SetSubtrees">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="(subtreePorts |>> {aBddInput}) \/ (theSubtrees * {aBddInput})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(theSubtrees * {aBddInput}) /&lt;: subtreePorts"/>
+          <typingPredicate body="subtreePorts~[{aBddInput}] = {}"/>
+          <typingPredicate body="!added.( added : theSubtrees => subtreePorts[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+      <param name="theSubtrees" type="//@sharedTypes.25">
+        <typingPredicate operator="In" type="//@sharedTypes.25"/>
+      </param>
+    </operations>
+    <operations name="Assignment_SetPort">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="({aAssignment} &lt;&lt;| assignPort) \/ {(aAssignment |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aAssignment |-> aPort)} /&lt;: assignPort"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+      <param name="aPort" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+    </operations>
+    <operations name="Assignment_SetOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="({aAssignment} &lt;&lt;| assignOwner) \/ {(aAssignment |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="{(aAssignment |-> aOwner)} /&lt;: assignOwner"/>
+          <typingPredicate body="!removed.( removed : assignOwner[{aAssignment}] => card(assignOwner~[{removed}]) >= 2)"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_SetAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="(assignPort |>> {aBddOutput}) \/ (theAssignments * {aBddOutput})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(theAssignments * {aBddOutput}) /&lt;: assignPort"/>
+          <typingPredicate body="assignPort~[{aBddOutput}] = {}"/>
+          <typingPredicate body="!added.( added : theAssignments => assignPort[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+      <param name="theAssignments" type="//@sharedTypes.23">
+        <typingPredicate operator="In" type="//@sharedTypes.23"/>
+      </param>
+    </operations>
+    <operations name="Leaf_SetAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="(assignOwner |>> {aLeaf}) \/ (theAssignments * {aLeaf})"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(theAssignments * {aLeaf}) /&lt;: assignOwner"/>
+          <typingPredicate body="assignOwner~[{aLeaf}] = {}"/>
+          <typingPredicate body="theAssignments /= {}"/>
+          <typingPredicate body="!added.( added : theAssignments => assignOwner[{added}] = {})"/>
+        </precondition>
+      </substitution>
+      <param name="aLeaf" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+      <param name="theAssignments" type="//@sharedTypes.23">
+        <typingPredicate operator="In" type="//@sharedTypes.23"/>
+      </param>
+    </operations>
+    <operations name="Port_UnsetCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="cellPort |>> {aPort}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="cellPort~[{aPort}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+    </operations>
+    <operations name="Tree_UnsetOwnerBDD">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="{aTree} &lt;&lt;| treeOwner"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="Tree_UnsetOwnerSubtreeForZero">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="treeForZero |>> {aTree}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="treeForZero~[{aTree}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="Tree_UnsetOwnerSubtreeForOne">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="treeForOne |>> {aTree}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="treeForOne~[{aTree}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="BDD_UnsetPorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="bddPorts |>> {aBDD}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="BDD_UnsetTree">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="treeOwner |>> {aBDD}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="BdP_UnsetOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="{aBdP} &lt;&lt;| bddPorts"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aBdP" type="//@machines.0/@data.10">
+        <typingPredicate operator="In" type="//@machines.0/@data.10"/>
+      </param>
+    </operations>
+    <operations name="BddInput_UnsetSubtrees">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="subtreePorts |>> {aBddInput}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="subtreePorts~[{aBddInput}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_UnsetAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="assignPort |>> {aBddOutput}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="assignPort~[{aBddOutput}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+    </operations>
+    <operations name="Port_AddCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="cellPort \/ {(aCells |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aCells |-> aPort) /: cellPort"/>
+          <typingPredicate body="cellPort[{aCells}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+      <param name="aCells" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_AddPorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="ttPorts \/ {(aPorts |-> aTruthTable)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aPorts |-> aTruthTable) /: ttPorts"/>
+          <typingPredicate body="ttPorts[{aPorts}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="aPorts" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_AddRows">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="rows \/ {(aRows |-> aTruthTable)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aRows |-> aTruthTable) /: rows"/>
+          <typingPredicate body="rows[{aRows}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="aRows" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+    </operations>
+    <operations name="Row_AddCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="cells \/ {(aCells |-> aRow)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aCells |-> aRow) /: cells"/>
+          <typingPredicate body="cells[{aCells}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+      <param name="aCells" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="BDD_AddPorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="bddPorts \/ {(aPorts |-> aBDD)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aPorts |-> aBDD) /: bddPorts"/>
+          <typingPredicate body="bddPorts[{aPorts}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+      <param name="aPorts" type="//@machines.0/@data.10">
+        <typingPredicate operator="In" type="//@machines.0/@data.10"/>
+      </param>
+    </operations>
+    <operations name="BddInput_AddSubtrees">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="subtreePorts \/ {(aSubtrees |-> aBddInput)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aSubtrees |-> aBddInput) /: subtreePorts"/>
+          <typingPredicate body="subtreePorts[{aSubtrees}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+      <param name="aSubtrees" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_AddAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="assignPort \/ {(aAssignments |-> aBddOutput)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aAssignments |-> aBddOutput) /: assignPort"/>
+          <typingPredicate body="assignPort[{aAssignments}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+      <param name="aAssignments" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Leaf_AddAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="assignOwner \/ {(aAssignments |-> aLeaf)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aAssignments |-> aLeaf) /: assignOwner"/>
+          <typingPredicate body="assignOwner[{aAssignments}] = {}"/>
+        </precondition>
+      </substitution>
+      <param name="aLeaf" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+      <param name="aAssignments" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Port_RemoveCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.20">
+            <value name="cellPort - {(aCells |-> aPort)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aCells |-> aPort) : cellPort"/>
+          <typingPredicate body="card(cellPort[{aCells}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aPort" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+      <param name="aCells" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_RemovePorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.17">
+            <value name="ttPorts - {(aPorts |-> aTruthTable)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aPorts |-> aTruthTable) : ttPorts"/>
+          <typingPredicate body="card(ttPorts~[{aTruthTable}]) >= 2"/>
+          <typingPredicate body="card(ttPorts[{aPorts}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="aPorts" type="//@machines.0/@data.4">
+        <typingPredicate operator="In" type="//@machines.0/@data.4"/>
+      </param>
+    </operations>
+    <operations name="TruthTable_RemoveRows">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.18">
+            <value name="rows - {(aRows |-> aTruthTable)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aRows |-> aTruthTable) : rows"/>
+          <typingPredicate body="card(rows~[{aTruthTable}]) >= 3"/>
+          <typingPredicate body="card(rows[{aRows}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aTruthTable" type="//@machines.0/@data.5">
+        <typingPredicate operator="In" type="//@machines.0/@data.5"/>
+      </param>
+      <param name="aRows" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+    </operations>
+    <operations name="Row_RemoveCells">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.19">
+            <value name="cells - {(aCells |-> aRow)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aCells |-> aRow) : cells"/>
+          <typingPredicate body="card(cells~[{aRow}]) >= 2"/>
+          <typingPredicate body="card(cells[{aCells}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aRow" type="//@machines.0/@data.6">
+        <typingPredicate operator="In" type="//@machines.0/@data.6"/>
+      </param>
+      <param name="aCells" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Tree_RemoveOwnerBDD">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="treeOwner - {(aTree |-> aOwnerBDD)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aTree |-> aOwnerBDD) : treeOwner"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aOwnerBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="Tree_RemoveOwnerSubtreeForZero">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.23">
+            <value name="treeForZero - {(aOwnerSubtreeForZero |-> aTree)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aOwnerSubtreeForZero |-> aTree) : treeForZero"/>
+          <typingPredicate body="card(treeForZero[{aOwnerSubtreeForZero}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aOwnerSubtreeForZero" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="Tree_RemoveOwnerSubtreeForOne">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.24">
+            <value name="treeForOne - {(aOwnerSubtreeForOne |-> aTree)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aOwnerSubtreeForOne |-> aTree) : treeForOne"/>
+          <typingPredicate body="card(treeForOne[{aOwnerSubtreeForOne}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+      <param name="aOwnerSubtreeForOne" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="BDD_RemovePorts">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="bddPorts - {(aPorts |-> aBDD)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aPorts |-> aBDD) : bddPorts"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+      <param name="aPorts" type="//@machines.0/@data.10">
+        <typingPredicate operator="In" type="//@machines.0/@data.10"/>
+      </param>
+    </operations>
+    <operations name="BDD_RemoveTree">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.22">
+            <value name="treeOwner - {(aTree |-> aBDD)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aTree |-> aBDD) : treeOwner"/>
+        </precondition>
+      </substitution>
+      <param name="aBDD" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+      <param name="aTree" type="//@machines.0/@data.3">
+        <typingPredicate operator="In" type="//@machines.0/@data.3"/>
+      </param>
+    </operations>
+    <operations name="BdP_RemoveOwner">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.21">
+            <value name="bddPorts - {(aBdP |-> aOwner)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aBdP |-> aOwner) : bddPorts"/>
+        </precondition>
+      </substitution>
+      <param name="aBdP" type="//@machines.0/@data.10">
+        <typingPredicate operator="In" type="//@machines.0/@data.10"/>
+      </param>
+      <param name="aOwner" type="//@machines.0/@data.9">
+        <typingPredicate operator="In" type="//@machines.0/@data.9"/>
+      </param>
+    </operations>
+    <operations name="BddInput_RemoveSubtrees">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.25">
+            <value name="subtreePorts - {(aSubtrees |-> aBddInput)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aSubtrees |-> aBddInput) : subtreePorts"/>
+          <typingPredicate body="card(subtreePorts[{aSubtrees}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aBddInput" type="//@machines.0/@data.15">
+        <typingPredicate operator="In" type="//@machines.0/@data.15"/>
+      </param>
+      <param name="aSubtrees" type="//@machines.0/@data.8">
+        <typingPredicate operator="In" type="//@machines.0/@data.8"/>
+      </param>
+    </operations>
+    <operations name="BddOutput_RemoveAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.26">
+            <value name="assignPort - {(aAssignments |-> aBddOutput)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aAssignments |-> aBddOutput) : assignPort"/>
+          <typingPredicate body="card(assignPort[{aAssignments}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aBddOutput" type="//@machines.0/@data.16">
+        <typingPredicate operator="In" type="//@machines.0/@data.16"/>
+      </param>
+      <param name="aAssignments" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Leaf_RemoveAssignments">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.27">
+            <value name="assignOwner - {(aAssignments |-> aLeaf)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aAssignments |-> aLeaf) : assignOwner"/>
+          <typingPredicate body="card(assignOwner~[{aLeaf}]) >= 2"/>
+          <typingPredicate body="card(assignOwner[{aAssignments}]) >= 2"/>
+        </precondition>
+      </substitution>
+      <param name="aLeaf" type="//@machines.0/@data.12">
+        <typingPredicate operator="In" type="//@machines.0/@data.12"/>
+      </param>
+      <param name="aAssignments" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Cell_GetValue">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := Cell_value(aCell)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aCell : dom(Cell_value)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Cell_GetDone">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := Cell_done(aCell)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aCell : dom(Cell_done)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Cell_GetSelected">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := Cell_selected(aCell)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aCell : dom(Cell_selected)"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Assignment_GetValue">
+      <substitution>
+        <substitution>
+          <expression>
+            <value name="result := Assignment_value(aAssignment)"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="aAssignment : dom(Assignment_value)"/>
+        </precondition>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+    </operations>
+    <operations name="Cell_SetValue">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.28">
+            <value name="({aCell} &lt;&lt;| Cell_value)  \/ {(aCell |-> aValue)}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aValue" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Cell_SetDone">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.29">
+            <value name="({aCell} &lt;&lt;| Cell_done)  \/ {(aCell |-> aDone)}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aDone" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Cell_SetSelected">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.30">
+            <value name="({aCell} &lt;&lt;| Cell_selected)  \/ {(aCell |-> aSelected)}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aSelected" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Assignment_SetValue">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.31">
+            <value name="({aAssignment} &lt;&lt;| Assignment_value)  \/ {(aAssignment |-> aValue)}"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aAssignment" type="//@machines.0/@data.11">
+        <typingPredicate operator="In" type="//@machines.0/@data.11"/>
+      </param>
+      <param name="aValue" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Cell_UnsetDone">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.29">
+            <value name="{aCell} &lt;&lt;| Cell_done"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Cell_UnsetSelected">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.30">
+            <value name="{aCell} &lt;&lt;| Cell_selected"/>
+          </expression>
+        </substitution>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+    </operations>
+    <operations name="Cell_RemoveDone">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.29">
+            <value name="Cell_done - {(aCell |-> aDone)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aCell |-> aDone) : Cell_done"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aDone" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <operations name="Cell_RemoveSelected">
+      <substitution>
+        <substitution>
+          <expression data="//@machines.0/@data.30">
+            <value name="Cell_selected - {(aCell |-> aSelected)}"/>
+          </expression>
+        </substitution>
+        <precondition>
+          <typingPredicate body="(aCell |-> aSelected) : Cell_selected"/>
+        </precondition>
+      </substitution>
+      <param name="aCell" type="//@machines.0/@data.7">
+        <typingPredicate operator="In" type="//@machines.0/@data.7"/>
+      </param>
+      <param name="aSelected" type="//@sharedTypes.0">
+        <typingPredicate operator="In" type="//@sharedTypes.0"/>
+      </param>
+    </operations>
+    <initialisation init="//@machines.0/@data.2"/>
+    <initialisation init="//@machines.0/@data.3"/>
+    <initialisation init="//@machines.0/@data.4"/>
+    <initialisation init="//@machines.0/@data.5"/>
+    <initialisation init="//@machines.0/@data.6"/>
+    <initialisation init="//@machines.0/@data.7"/>
+    <initialisation init="//@machines.0/@data.8"/>
+    <initialisation init="//@machines.0/@data.9"/>
+    <initialisation init="//@machines.0/@data.10"/>
+    <initialisation init="//@machines.0/@data.11"/>
+    <initialisation init="//@machines.0/@data.12"/>
+    <initialisation init="//@machines.0/@data.13"/>
+    <initialisation init="//@machines.0/@data.14"/>
+    <initialisation init="//@machines.0/@data.15"/>
+    <initialisation init="//@machines.0/@data.16"/>
+    <initialisation init="//@machines.0/@data.17"/>
+    <initialisation init="//@machines.0/@data.18"/>
+    <initialisation init="//@machines.0/@data.19"/>
+    <initialisation init="//@machines.0/@data.20"/>
+    <initialisation init="//@machines.0/@data.21"/>
+    <initialisation init="//@machines.0/@data.22"/>
+    <initialisation init="//@machines.0/@data.23"/>
+    <initialisation init="//@machines.0/@data.24"/>
+    <initialisation init="//@machines.0/@data.25"/>
+    <initialisation init="//@machines.0/@data.26"/>
+    <initialisation init="//@machines.0/@data.27"/>
+    <initialisation init="//@machines.0/@data.28"/>
+    <initialisation init="//@machines.0/@data.29"/>
+    <initialisation init="//@machines.0/@data.30"/>
+    <initialisation init="//@machines.0/@data.31"/>
+  </machines>
+  <sharedTypes xsi:type="bmethod:Bool" typing="//@machines.0/@operations.2/@param.3 //@machines.0/@operations.5/@param.3 //@machines.0/@operations.100/@param.1 //@machines.0/@operations.101/@param.1 //@machines.0/@operations.102/@param.1 //@machines.0/@operations.103/@param.1 //@machines.0/@operations.106/@param.1 //@machines.0/@operations.107/@param.1"/>
+  <sharedTypes xsi:type="bmethod:BPowType" base="//@machines.0/@data.0"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@data.2" base="//@machines.0/@data.0" finite="true"/>
+  <sharedTypes xsi:type="bmethod:BPowType" base="//@machines.0/@data.1"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@data.3" base="//@machines.0/@data.1" finite="true"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.17" expression="TotalSurjection" dom="//@machines.0/@data.4" ran="//@machines.0/@data.5"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.18" expression="TotalSurjection" dom="//@machines.0/@data.6" ran="//@machines.0/@data.5"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.19" expression="TotalSurjection" dom="//@machines.0/@data.7" ran="//@machines.0/@data.6"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.20" expression="TotalFunction" dom="//@machines.0/@data.7" ran="//@machines.0/@data.4"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.21" expression="PartialFunction" dom="//@machines.0/@data.10" ran="//@machines.0/@data.9"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.22" expression="PartialInjection" dom="//@machines.0/@data.3" ran="//@machines.0/@data.9"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.23" expression="TotalInjection" dom="//@machines.0/@data.8" ran="//@machines.0/@data.3"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.24" expression="TotalInjection" dom="//@machines.0/@data.8" ran="//@machines.0/@data.3"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.25" expression="TotalFunction" dom="//@machines.0/@data.8" ran="//@machines.0/@data.15"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.26" expression="TotalFunction" dom="//@machines.0/@data.11" ran="//@machines.0/@data.16"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.27" expression="TotalSurjection" dom="//@machines.0/@data.11" ran="//@machines.0/@data.12"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.28" expression="TotalFunction" dom="//@machines.0/@data.7" ran="//@sharedTypes.0"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.29" expression="PartialFunction" dom="//@machines.0/@data.7" ran="//@sharedTypes.0"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.30" expression="PartialFunction" dom="//@machines.0/@data.7" ran="//@sharedTypes.0"/>
+  <sharedTypes xsi:type="bmethod:BComposedType" typing="//@machines.0/@data.31" expression="TotalFunction" dom="//@machines.0/@data.11" ran="//@sharedTypes.0"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@operations.0/@param.1 //@machines.0/@operations.46/@param.1" base="//@machines.0/@data.4"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@operations.0/@param.2 //@machines.0/@operations.47/@param.1" base="//@machines.0/@data.6"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@operations.1/@param.2 //@machines.0/@operations.45/@param.1 //@machines.0/@operations.49/@param.1" base="//@machines.0/@data.7"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@operations.6/@param.1 //@machines.0/@operations.64/@param.1 //@machines.0/@operations.65/@param.1" base="//@machines.0/@data.11"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@operations.58/@param.1" base="//@machines.0/@data.10"/>
+  <sharedTypes xsi:type="bmethod:BPowType" typing="//@machines.0/@operations.61/@param.1" base="//@machines.0/@data.8"/>
+</bmethod:BSpec>

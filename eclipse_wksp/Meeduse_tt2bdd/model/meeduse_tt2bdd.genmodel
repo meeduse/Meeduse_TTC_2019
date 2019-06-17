@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Meeduse_tt2bdd/src" modelPluginID="Meeduse_tt2bdd"
+    modelName="Meeduse_tt2bdd" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>meeduse_tt2bdd.ecore</foreignModel>
+  <genPackages prefix="Meeduse_tt2bdd" disposableProviderFactory="true" ecorePackage="meeduse_tt2bdd.ecore#/">
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//InputPort"/>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//Cell">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meeduse_tt2bdd.ecore#//Cell/value"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Cell/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Cell/port"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meeduse_tt2bdd.ecore#//Cell/done"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meeduse_tt2bdd.ecore#//Cell/selected"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="meeduse_tt2bdd.ecore#//Port">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Port/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Port/cells"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//Row">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Row/owner"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Row/cells"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//OutputPort"/>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//TruthTable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//TruthTable/ports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//TruthTable/rows"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//Subtree">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Subtree/port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Subtree/treeForZero"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Subtree/treeForOne"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//Assignment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meeduse_tt2bdd.ecore#//Assignment/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Assignment/port"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Assignment/owner"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//BddOutput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//BddOutput/assignments"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//Leaf">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Leaf/assignments"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="meeduse_tt2bdd.ecore#//Tree">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Tree/ownerBDD"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Tree/ownerSubtreeForZero"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//Tree/ownerSubtreeForOne"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meeduse_tt2bdd.ecore#//Tree/name"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//BDD">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//BDD/ports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//BDD/tree"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="meeduse_tt2bdd.ecore#//BdP">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//BdP/owner"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//BddInput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meeduse_tt2bdd.ecore#//BddInput/subtrees"/>
+    </genClasses>
+    <genClasses ecoreClass="meeduse_tt2bdd.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meeduse_tt2bdd.ecore#//Element/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

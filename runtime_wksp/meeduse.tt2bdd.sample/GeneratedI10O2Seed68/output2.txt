@@ -1,0 +1,3 @@
+Model checking time: 1077065 ms (1135349 ms walltime)
+States analysed: 8191
+Transitions fired: 8192

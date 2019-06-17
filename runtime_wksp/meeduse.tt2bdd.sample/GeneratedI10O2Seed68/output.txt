@@ -1,0 +1,16 @@
+Model checking time: 1084123 ms (1142695 ms walltime)
+States analysed: 8191
+Transitions fired: 8192
+
+Model checking time: 1077065 ms (1135349 ms walltime)
+States analysed: 8191
+Transitions fired: 8192
+
+Model checking time: 1124924 ms (1183576 ms walltime)
+States analysed: 8191
+Transitions fired: 8192
+
+
+1071937 ms (1129225 ms walltime)
+States analysed: 8191
+Transitions fired: 8192

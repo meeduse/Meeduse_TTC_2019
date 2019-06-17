@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_G-CGQHfGEemZfev1SHOsoA" name="meeduse_tt2bdd" URI="http://www.example.org/meeduse_tt2bdd">
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CGQXfGEemZfev1SHOsoA" name="InputPort">
+    <generalization xmi:id="_G-CGQnfGEemZfev1SHOsoA" general="_G-CGQ3fGEemZfev1SHOsoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CGQ3fGEemZfev1SHOsoA" name="Port" isAbstract="true">
+    <generalization xmi:id="_G-CGRHfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CGRXfGEemZfev1SHOsoA" name="owner" type="_G-CGS3fGEemZfev1SHOsoA" association="_G-CGUnfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CGRnfGEemZfev1SHOsoA" name="cells" type="_G-CtU3fGEemZfev1SHOsoA" association="_G-CtXXfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CGR3fGEemZfev1SHOsoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-CGSHfGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CGSXfGEemZfev1SHOsoA" name="Element" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CGS3fGEemZfev1SHOsoA" name="TruthTable">
+    <generalization xmi:id="_G-CGTHfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CGTXfGEemZfev1SHOsoA" name="ports" type="_G-CGQ3fGEemZfev1SHOsoA" aggregation="composite" association="_G-CGUnfGEemZfev1SHOsoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-CGTnfGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CGT3fGEemZfev1SHOsoA" name="rows" type="_G-CGU3fGEemZfev1SHOsoA" aggregation="composite" association="_G-CtUnfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CGUHfGEemZfev1SHOsoA" value="2"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-CGUXfGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CGUnfGEemZfev1SHOsoA" name="ttPorts" memberEnd="_G-CGTXfGEemZfev1SHOsoA _G-CGRXfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CGU3fGEemZfev1SHOsoA" name="Row">
+    <generalization xmi:id="_G-CGVHfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CGVXfGEemZfev1SHOsoA" name="owner" type="_G-CGS3fGEemZfev1SHOsoA" association="_G-CtUnfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtUHfGEemZfev1SHOsoA" name="cells" type="_G-CtU3fGEemZfev1SHOsoA" aggregation="composite" association="_G-CtXHfGEemZfev1SHOsoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-CtUXfGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CtUnfGEemZfev1SHOsoA" name="rows" memberEnd="_G-CGT3fGEemZfev1SHOsoA _G-CGVXfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtU3fGEemZfev1SHOsoA" name="Cell">
+    <generalization xmi:id="_G-CtVHfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtVXfGEemZfev1SHOsoA" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CtVnfGEemZfev1SHOsoA" name="owner" type="_G-CGU3fGEemZfev1SHOsoA" association="_G-CtXHfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtV3fGEemZfev1SHOsoA" name="port" type="_G-CGQ3fGEemZfev1SHOsoA" association="_G-CtXXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtWHfGEemZfev1SHOsoA" name="done" visibility="public" isOrdered="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtWXfGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CtWnfGEemZfev1SHOsoA" name="selected" visibility="public" isOrdered="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtW3fGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CtXHfGEemZfev1SHOsoA" name="cells" memberEnd="_G-CtUHfGEemZfev1SHOsoA _G-CtVnfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CtXXfGEemZfev1SHOsoA" name="cellPort" memberEnd="_G-CGRnfGEemZfev1SHOsoA _G-CtV3fGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtXnfGEemZfev1SHOsoA" name="OutputPort">
+    <generalization xmi:id="_G-CtX3fGEemZfev1SHOsoA" general="_G-CGQ3fGEemZfev1SHOsoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtYHfGEemZfev1SHOsoA" name="Subtree">
+    <generalization xmi:id="_G-CtYXfGEemZfev1SHOsoA" general="_G-CtZXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtYnfGEemZfev1SHOsoA" name="treeForZero" type="_G-CtZXfGEemZfev1SHOsoA" aggregation="composite" association="_G-CteXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtY3fGEemZfev1SHOsoA" name="treeForOne" type="_G-CtZXfGEemZfev1SHOsoA" aggregation="composite" association="_G-CtenfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtZHfGEemZfev1SHOsoA" name="port" type="_G-Cte3fGEemZfev1SHOsoA" association="_G-CtgHfGEemZfev1SHOsoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtZXfGEemZfev1SHOsoA" name="Tree" isAbstract="true">
+    <ownedAttribute xmi:id="_G-CtZnfGEemZfev1SHOsoA" name="ownerBDD" type="_G-CtbHfGEemZfev1SHOsoA" association="_G-CteHfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtZ3fGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CtaHfGEemZfev1SHOsoA" name="ownerSubtreeForZero" type="_G-CtYHfGEemZfev1SHOsoA" association="_G-CteXfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtaXfGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CtanfGEemZfev1SHOsoA" name="ownerSubtreeForOne" type="_G-CtYHfGEemZfev1SHOsoA" association="_G-CtenfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-Cta3fGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtbHfGEemZfev1SHOsoA" name="BDD">
+    <generalization xmi:id="_G-CtbXfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtbnfGEemZfev1SHOsoA" name="ports" type="_G-Ctc3fGEemZfev1SHOsoA" aggregation="composite" association="_G-Ctd3fGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-Ctb3fGEemZfev1SHOsoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-CtcHfGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CtcXfGEemZfev1SHOsoA" name="tree" type="_G-CtZXfGEemZfev1SHOsoA" aggregation="composite" association="_G-CteHfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtcnfGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-Ctc3fGEemZfev1SHOsoA" name="BdP" isAbstract="true">
+    <generalization xmi:id="_G-CtdHfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtdXfGEemZfev1SHOsoA" name="owner" type="_G-CtbHfGEemZfev1SHOsoA" association="_G-Ctd3fGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtdnfGEemZfev1SHOsoA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-Ctd3fGEemZfev1SHOsoA" name="bddPorts" memberEnd="_G-CtbnfGEemZfev1SHOsoA _G-CtdXfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CteHfGEemZfev1SHOsoA" name="treeOwner" memberEnd="_G-CtcXfGEemZfev1SHOsoA _G-CtZnfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CteXfGEemZfev1SHOsoA" name="treeForZero" memberEnd="_G-CtYnfGEemZfev1SHOsoA _G-CtaHfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CtenfGEemZfev1SHOsoA" name="treeForOne" memberEnd="_G-CtY3fGEemZfev1SHOsoA _G-CtanfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-Cte3fGEemZfev1SHOsoA" name="BddInput">
+    <generalization xmi:id="_G-CtfHfGEemZfev1SHOsoA" general="_G-Ctc3fGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtfXfGEemZfev1SHOsoA" name="subtrees" type="_G-CtYHfGEemZfev1SHOsoA" association="_G-CtgHfGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtfnfGEemZfev1SHOsoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-Ctf3fGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CtgHfGEemZfev1SHOsoA" name="subtreePorts" memberEnd="_G-CtfXfGEemZfev1SHOsoA _G-CtZHfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtgXfGEemZfev1SHOsoA" name="Assignment">
+    <generalization xmi:id="_G-CtgnfGEemZfev1SHOsoA" general="_G-CGSXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-Ctg3fGEemZfev1SHOsoA" name="value" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_G-CthHfGEemZfev1SHOsoA" name="port" type="_G-CthnfGEemZfev1SHOsoA" association="_G-Cti3fGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CthXfGEemZfev1SHOsoA" name="owner" type="_G-CtjHfGEemZfev1SHOsoA" association="_G-CtkHfGEemZfev1SHOsoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CthnfGEemZfev1SHOsoA" name="BddOutput">
+    <generalization xmi:id="_G-Cth3fGEemZfev1SHOsoA" general="_G-Ctc3fGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtiHfGEemZfev1SHOsoA" name="assignments" type="_G-CtgXfGEemZfev1SHOsoA" association="_G-Cti3fGEemZfev1SHOsoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G-CtiXfGEemZfev1SHOsoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-CtinfGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-Cti3fGEemZfev1SHOsoA" name="assignPort" memberEnd="_G-CtiHfGEemZfev1SHOsoA _G-CthHfGEemZfev1SHOsoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-CtjHfGEemZfev1SHOsoA" name="Leaf">
+    <generalization xmi:id="_G-CtjXfGEemZfev1SHOsoA" general="_G-CtZXfGEemZfev1SHOsoA"/>
+    <ownedAttribute xmi:id="_G-CtjnfGEemZfev1SHOsoA" name="assignments" type="_G-CtgXfGEemZfev1SHOsoA" aggregation="composite" association="_G-CtkHfGEemZfev1SHOsoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G-Ctj3fGEemZfev1SHOsoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G-CtkHfGEemZfev1SHOsoA" name="assignOwner" memberEnd="_G-CtjnfGEemZfev1SHOsoA _G-CthXfGEemZfev1SHOsoA"/>
+  <profileApplication xmi:id="_G-CtkXfGEemZfev1SHOsoA">
+    <eAnnotations xmi:id="_G-CtknfGEemZfev1SHOsoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>

@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ctm.trace:TransformationTrace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ctm.trace="http://fr.liglab.vasco/b4msecure/2.0/models/ctm/trace">
+  <maps targets="//@references.1" source="//@references.0" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#CreateSystemMachine"/>
+  <maps targets="//@references.3" source="//@references.2" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#PrimitiveTypeTo"/>
+  <maps targets="//@references.5" source="//@references.4" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RootClassTo"/>
+  <maps targets="//@references.7" source="//@references.6" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RootClassTo"/>
+  <maps targets="//@references.8" source="//@references.4" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.9" source="//@references.6" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.11" source="//@references.10" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.13" source="//@references.12" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.15" source="//@references.14" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.17" source="//@references.16" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.19" source="//@references.18" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.21" source="//@references.20" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.23" source="//@references.22" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.25" source="//@references.24" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.27" source="//@references.26" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.29" source="//@references.28" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.31" source="//@references.30" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.33" source="//@references.32" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.35" source="//@references.34" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#ClassTo"/>
+  <maps targets="//@references.37" source="//@references.36" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.39" source="//@references.38" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.41" source="//@references.40" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.43" source="//@references.42" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.45" source="//@references.44" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.47" source="//@references.46" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.49" source="//@references.48" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.51" source="//@references.50" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.53" source="//@references.52" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.55" source="//@references.54" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.57" source="//@references.56" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AssociationTo"/>
+  <maps targets="//@references.59" source="//@references.58" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeTo"/>
+  <maps targets="//@references.61" source="//@references.60" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeTo"/>
+  <maps targets="//@references.63" source="//@references.62" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeTo"/>
+  <maps targets="//@references.65" source="//@references.64" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeTo"/>
+  <maps targets="//@references.66" source="//@references.12" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.67" source="//@references.14" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.68" source="//@references.16" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.69" source="//@references.18" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.70" source="//@references.20" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.71" source="//@references.24" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.72" source="//@references.26" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.73" source="//@references.28" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.74" source="//@references.30" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.75" source="//@references.32" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.76" source="//@references.34" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateConstructor"/>
+  <maps targets="//@references.77" source="//@references.12" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.78" source="//@references.14" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.79" source="//@references.16" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.80" source="//@references.18" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.81" source="//@references.20" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.82" source="//@references.24" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.83" source="//@references.26" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.84" source="//@references.28" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.85" source="//@references.30" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.86" source="//@references.32" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.87" source="//@references.34" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#GenerateDestructor"/>
+  <maps targets="//@references.89" source="//@references.88" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.91" source="//@references.90" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.93" source="//@references.92" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.95" source="//@references.94" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.97" source="//@references.96" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.99" source="//@references.98" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.101" source="//@references.100" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.103" source="//@references.102" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.105" source="//@references.104" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.107" source="//@references.106" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.109" source="//@references.108" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.111" source="//@references.110" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.113" source="//@references.112" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.115" source="//@references.114" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.117" source="//@references.116" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.119" source="//@references.118" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.121" source="//@references.120" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.123" source="//@references.122" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.125" source="//@references.124" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.127" source="//@references.126" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.129" source="//@references.128" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.131" source="//@references.130" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAccessor"/>
+  <maps targets="//@references.132" source="//@references.88" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.133" source="//@references.90" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.134" source="//@references.92" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.135" source="//@references.94" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.136" source="//@references.96" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.137" source="//@references.98" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.138" source="//@references.100" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.139" source="//@references.102" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.140" source="//@references.104" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.141" source="//@references.106" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.142" source="//@references.108" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.143" source="//@references.110" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.144" source="//@references.112" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.145" source="//@references.114" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.146" source="//@references.116" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.147" source="//@references.118" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.148" source="//@references.120" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.149" source="//@references.122" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.150" source="//@references.124" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.151" source="//@references.126" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.152" source="//@references.128" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.153" source="//@references.130" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleSetter"/>
+  <maps targets="//@references.154" source="//@references.90" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.155" source="//@references.110" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.156" source="//@references.112" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.157" source="//@references.114" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.158" source="//@references.116" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.159" source="//@references.118" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.160" source="//@references.120" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.161" source="//@references.122" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.162" source="//@references.128" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleUnsetter"/>
+  <maps targets="//@references.163" source="//@references.90" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.164" source="//@references.92" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.165" source="//@references.94" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.166" source="//@references.98" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.167" source="//@references.116" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.168" source="//@references.122" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.169" source="//@references.128" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.170" source="//@references.130" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleAdder"/>
+  <maps targets="//@references.171" source="//@references.90" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.172" source="//@references.92" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.173" source="//@references.94" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.174" source="//@references.98" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.175" source="//@references.110" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.176" source="//@references.112" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.177" source="//@references.114" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.178" source="//@references.116" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.179" source="//@references.118" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.180" source="//@references.120" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.181" source="//@references.122" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.182" source="//@references.128" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.183" source="//@references.130" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#RoleRemover"/>
+  <maps targets="//@references.184" source="//@references.58" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeAccessor"/>
+  <maps targets="//@references.185" source="//@references.60" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeAccessor"/>
+  <maps targets="//@references.186" source="//@references.62" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeAccessor"/>
+  <maps targets="//@references.187" source="//@references.64" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeAccessor"/>
+  <maps targets="//@references.188" source="//@references.58" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeSetter"/>
+  <maps targets="//@references.189" source="//@references.60" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeSetter"/>
+  <maps targets="//@references.190" source="//@references.62" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeSetter"/>
+  <maps targets="//@references.191" source="//@references.64" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeSetter"/>
+  <maps targets="//@references.192" source="//@references.60" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeUnsetter"/>
+  <maps targets="//@references.193" source="//@references.62" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeUnsetter"/>
+  <maps targets="//@references.194" source="//@references.60" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeRemover"/>
+  <maps targets="//@references.195" source="//@references.62" rule="http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig#AttributeRemover"/>
+  <references outgoing="//@maps.0">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGQHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.0">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0"/>
+  </references>
+  <references outgoing="//@maps.1">
+    <object href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+  </references>
+  <references incoming="//@maps.1">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@sharedTypes.0"/>
+  </references>
+  <references outgoing="//@maps.2 //@maps.4">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGSXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.2">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.0"/>
+  </references>
+  <references outgoing="//@maps.3 //@maps.5">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtZXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.3">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.1"/>
+  </references>
+  <references incoming="//@maps.4">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.2"/>
+  </references>
+  <references incoming="//@maps.5">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.3"/>
+  </references>
+  <references outgoing="//@maps.6">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGQ3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.6">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.4"/>
+  </references>
+  <references outgoing="//@maps.7 //@maps.34 //@maps.45">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGS3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.7">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.5"/>
+  </references>
+  <references outgoing="//@maps.8 //@maps.35 //@maps.46">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGU3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.8">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.6"/>
+  </references>
+  <references outgoing="//@maps.9 //@maps.36 //@maps.47">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtU3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.9">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.7"/>
+  </references>
+  <references outgoing="//@maps.10 //@maps.37 //@maps.48">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtYHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.10">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.8"/>
+  </references>
+  <references outgoing="//@maps.11 //@maps.38 //@maps.49">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtbHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.11">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.9"/>
+  </references>
+  <references outgoing="//@maps.12">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-Ctc3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.12">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.10"/>
+  </references>
+  <references outgoing="//@maps.13 //@maps.39 //@maps.50">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtgXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.13">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.11"/>
+  </references>
+  <references outgoing="//@maps.14 //@maps.40 //@maps.51">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtjHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.14">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.12"/>
+  </references>
+  <references outgoing="//@maps.15 //@maps.41 //@maps.52">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGQXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.15">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.13"/>
+  </references>
+  <references outgoing="//@maps.16 //@maps.42 //@maps.53">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtXnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.16">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.14"/>
+  </references>
+  <references outgoing="//@maps.17 //@maps.43 //@maps.54">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-Cte3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.17">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.15"/>
+  </references>
+  <references outgoing="//@maps.18 //@maps.44 //@maps.55">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CthnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.18">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.16"/>
+  </references>
+  <references outgoing="//@maps.19">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGUnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.19">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.17"/>
+  </references>
+  <references outgoing="//@maps.20">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtUnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.20">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.18"/>
+  </references>
+  <references outgoing="//@maps.21">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtXHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.21">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.19"/>
+  </references>
+  <references outgoing="//@maps.22">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtXXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.22">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.20"/>
+  </references>
+  <references outgoing="//@maps.23">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-Ctd3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.23">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.21"/>
+  </references>
+  <references outgoing="//@maps.24">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CteHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.24">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.22"/>
+  </references>
+  <references outgoing="//@maps.25">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CteXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.25">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.23"/>
+  </references>
+  <references outgoing="//@maps.26">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtenfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.26">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.24"/>
+  </references>
+  <references outgoing="//@maps.27">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtgHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.27">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.25"/>
+  </references>
+  <references outgoing="//@maps.28">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-Cti3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.28">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.26"/>
+  </references>
+  <references outgoing="//@maps.29">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtkHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.29">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.27"/>
+  </references>
+  <references outgoing="//@maps.30 //@maps.130 //@maps.134">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtVXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.30">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.28"/>
+  </references>
+  <references outgoing="//@maps.31 //@maps.131 //@maps.135 //@maps.138 //@maps.140">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtWHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.31">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.29"/>
+  </references>
+  <references outgoing="//@maps.32 //@maps.132 //@maps.136 //@maps.139 //@maps.141">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtWnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.32">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.30"/>
+  </references>
+  <references outgoing="//@maps.33 //@maps.133 //@maps.137">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-Ctg3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.33">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@data.31"/>
+  </references>
+  <references incoming="//@maps.34">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.0"/>
+  </references>
+  <references incoming="//@maps.35">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.1"/>
+  </references>
+  <references incoming="//@maps.36">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.2"/>
+  </references>
+  <references incoming="//@maps.37">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.3"/>
+  </references>
+  <references incoming="//@maps.38">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.4"/>
+  </references>
+  <references incoming="//@maps.39">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.5"/>
+  </references>
+  <references incoming="//@maps.40">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.6"/>
+  </references>
+  <references incoming="//@maps.41">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.7"/>
+  </references>
+  <references incoming="//@maps.42">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.8"/>
+  </references>
+  <references incoming="//@maps.43">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.9"/>
+  </references>
+  <references incoming="//@maps.44">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.10"/>
+  </references>
+  <references incoming="//@maps.45">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.11"/>
+  </references>
+  <references incoming="//@maps.46">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.12"/>
+  </references>
+  <references incoming="//@maps.47">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.13"/>
+  </references>
+  <references incoming="//@maps.48">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.14"/>
+  </references>
+  <references incoming="//@maps.49">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.15"/>
+  </references>
+  <references incoming="//@maps.50">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.16"/>
+  </references>
+  <references incoming="//@maps.51">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.17"/>
+  </references>
+  <references incoming="//@maps.52">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.18"/>
+  </references>
+  <references incoming="//@maps.53">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.19"/>
+  </references>
+  <references incoming="//@maps.54">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.20"/>
+  </references>
+  <references incoming="//@maps.55">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.21"/>
+  </references>
+  <references outgoing="//@maps.56 //@maps.78">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGRXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.56">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.22"/>
+  </references>
+  <references outgoing="//@maps.57 //@maps.79 //@maps.100 //@maps.109 //@maps.117">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGRnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.57">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.23"/>
+  </references>
+  <references outgoing="//@maps.58 //@maps.80 //@maps.110 //@maps.118">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGTXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.58">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.24"/>
+  </references>
+  <references outgoing="//@maps.59 //@maps.81 //@maps.111 //@maps.119">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGT3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.59">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.25"/>
+  </references>
+  <references outgoing="//@maps.60 //@maps.82">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CGVXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.60">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.26"/>
+  </references>
+  <references outgoing="//@maps.61 //@maps.83 //@maps.112 //@maps.120">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtUHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.61">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.27"/>
+  </references>
+  <references outgoing="//@maps.62 //@maps.84">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtVnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.62">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.28"/>
+  </references>
+  <references outgoing="//@maps.63 //@maps.85">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtV3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.63">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.29"/>
+  </references>
+  <references outgoing="//@maps.64 //@maps.86">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtYnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.64">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.30"/>
+  </references>
+  <references outgoing="//@maps.65 //@maps.87">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtY3fGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.65">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.31"/>
+  </references>
+  <references outgoing="//@maps.66 //@maps.88">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtZHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.66">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.32"/>
+  </references>
+  <references outgoing="//@maps.67 //@maps.89 //@maps.101 //@maps.121">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtZnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.67">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.33"/>
+  </references>
+  <references outgoing="//@maps.68 //@maps.90 //@maps.102 //@maps.122">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtaHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.68">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.34"/>
+  </references>
+  <references outgoing="//@maps.69 //@maps.91 //@maps.103 //@maps.123">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtanfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.69">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.35"/>
+  </references>
+  <references outgoing="//@maps.70 //@maps.92 //@maps.104 //@maps.113 //@maps.124">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtbnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.70">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.36"/>
+  </references>
+  <references outgoing="//@maps.71 //@maps.93 //@maps.105 //@maps.125">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtcXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.71">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.37"/>
+  </references>
+  <references outgoing="//@maps.72 //@maps.94 //@maps.106 //@maps.126">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtdXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.72">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.38"/>
+  </references>
+  <references outgoing="//@maps.73 //@maps.95 //@maps.107 //@maps.114 //@maps.127">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtfXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.73">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.39"/>
+  </references>
+  <references outgoing="//@maps.74 //@maps.96">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CthHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.74">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.40"/>
+  </references>
+  <references outgoing="//@maps.75 //@maps.97">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CthXfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.75">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.41"/>
+  </references>
+  <references outgoing="//@maps.76 //@maps.98 //@maps.108 //@maps.115 //@maps.128">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtiHfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.76">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.42"/>
+  </references>
+  <references outgoing="//@maps.77 //@maps.99 //@maps.116 //@maps.129">
+    <object href="meeduse_tt2bdd.ecore.uml#_G-CtjnfGEemZfev1SHOsoA"/>
+  </references>
+  <references incoming="//@maps.77">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.43"/>
+  </references>
+  <references incoming="//@maps.78">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.44"/>
+  </references>
+  <references incoming="//@maps.79">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.45"/>
+  </references>
+  <references incoming="//@maps.80">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.46"/>
+  </references>
+  <references incoming="//@maps.81">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.47"/>
+  </references>
+  <references incoming="//@maps.82">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.48"/>
+  </references>
+  <references incoming="//@maps.83">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.49"/>
+  </references>
+  <references incoming="//@maps.84">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.50"/>
+  </references>
+  <references incoming="//@maps.85">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.51"/>
+  </references>
+  <references incoming="//@maps.86">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.52"/>
+  </references>
+  <references incoming="//@maps.87">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.53"/>
+  </references>
+  <references incoming="//@maps.88">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.54"/>
+  </references>
+  <references incoming="//@maps.89">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.55"/>
+  </references>
+  <references incoming="//@maps.90">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.56"/>
+  </references>
+  <references incoming="//@maps.91">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.57"/>
+  </references>
+  <references incoming="//@maps.92">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.58"/>
+  </references>
+  <references incoming="//@maps.93">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.59"/>
+  </references>
+  <references incoming="//@maps.94">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.60"/>
+  </references>
+  <references incoming="//@maps.95">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.61"/>
+  </references>
+  <references incoming="//@maps.96">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.62"/>
+  </references>
+  <references incoming="//@maps.97">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.63"/>
+  </references>
+  <references incoming="//@maps.98">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.64"/>
+  </references>
+  <references incoming="//@maps.99">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.65"/>
+  </references>
+  <references incoming="//@maps.100">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.66"/>
+  </references>
+  <references incoming="//@maps.101">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.67"/>
+  </references>
+  <references incoming="//@maps.102">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.68"/>
+  </references>
+  <references incoming="//@maps.103">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.69"/>
+  </references>
+  <references incoming="//@maps.104">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.70"/>
+  </references>
+  <references incoming="//@maps.105">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.71"/>
+  </references>
+  <references incoming="//@maps.106">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.72"/>
+  </references>
+  <references incoming="//@maps.107">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.73"/>
+  </references>
+  <references incoming="//@maps.108">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.74"/>
+  </references>
+  <references incoming="//@maps.109">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.75"/>
+  </references>
+  <references incoming="//@maps.110">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.76"/>
+  </references>
+  <references incoming="//@maps.111">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.77"/>
+  </references>
+  <references incoming="//@maps.112">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.78"/>
+  </references>
+  <references incoming="//@maps.113">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.79"/>
+  </references>
+  <references incoming="//@maps.114">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.80"/>
+  </references>
+  <references incoming="//@maps.115">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.81"/>
+  </references>
+  <references incoming="//@maps.116">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.82"/>
+  </references>
+  <references incoming="//@maps.117">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.83"/>
+  </references>
+  <references incoming="//@maps.118">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.84"/>
+  </references>
+  <references incoming="//@maps.119">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.85"/>
+  </references>
+  <references incoming="//@maps.120">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.86"/>
+  </references>
+  <references incoming="//@maps.121">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.87"/>
+  </references>
+  <references incoming="//@maps.122">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.88"/>
+  </references>
+  <references incoming="//@maps.123">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.89"/>
+  </references>
+  <references incoming="//@maps.124">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.90"/>
+  </references>
+  <references incoming="//@maps.125">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.91"/>
+  </references>
+  <references incoming="//@maps.126">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.92"/>
+  </references>
+  <references incoming="//@maps.127">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.93"/>
+  </references>
+  <references incoming="//@maps.128">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.94"/>
+  </references>
+  <references incoming="//@maps.129">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.95"/>
+  </references>
+  <references incoming="//@maps.130">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.96"/>
+  </references>
+  <references incoming="//@maps.131">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.97"/>
+  </references>
+  <references incoming="//@maps.132">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.98"/>
+  </references>
+  <references incoming="//@maps.133">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.99"/>
+  </references>
+  <references incoming="//@maps.134">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.100"/>
+  </references>
+  <references incoming="//@maps.135">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.101"/>
+  </references>
+  <references incoming="//@maps.136">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.102"/>
+  </references>
+  <references incoming="//@maps.137">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.103"/>
+  </references>
+  <references incoming="//@maps.138">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.104"/>
+  </references>
+  <references incoming="//@maps.139">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.105"/>
+  </references>
+  <references incoming="//@maps.140">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.106"/>
+  </references>
+  <references incoming="//@maps.141">
+    <object href="meeduse_tt2bdd.ecore.bmethod#//@machines.0/@operations.107"/>
+  </references>
+</ctm.trace:TransformationTrace>

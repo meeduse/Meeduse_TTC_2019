@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<probcli-run>
+ <version major="1" minor="9" patch="0" suffix="nightly" revision="8b8974b28c61136e07b15faba7998079adef32bd" lastchanged="Tue Jun 11 15:41:45 2019 +0200" prolog="SICStus 4.5.1 (x86_64-darwin-15.6.0): Tue Apr  2 15:33:59 CEST 2019" />
+ <options>
+  <number>1560549115659</number>
+  <list>
+   <cli_mc>
+    <number>1152921504606846975</number>
+   </cli_mc>
+   <atom>depth_first</atom>
+   <set_preference_group>
+    <atom>time_out</atom>
+    <atom>disable_time_out</atom>
+   </set_preference_group>
+   <atom>no_assertion_violations</atom>
+   <atom>no_invariant_violations</atom>
+   <print_values>
+    <atom>output.probstate</atom>
+   </print_values>
+   <log>
+    <atom>log.xml</atom>
+    <atom>xml</atom>
+   </log>
+  </list>
+ </options>
+ <files>
+  <number>1560549115659</number>
+  <list>
+   <atom>meeduse_tt2bddref.ref</atom>
+  </list>
+ </files>
+ <date year="2019" month="6" day="14" hour="23" minutes="51" seconds="55" />
+ <process_file filename="/Users/idani/git/Meeduse_TTC/meeduse.tt2bdd.sample/tt/meeduse_tt2bddref.ref">
+  <error_occurred category="load_main_file" type="error" message="" />
+  <error_occurred category="parsercall" type="error" message="Unexpected error while parsing machine:" />
+  <multiple_errors_occurred category="parsercall" type="error" number="2" />
+  <probcli-errors errors="2" warnings="0" />
+  <statistics walltime="244624" walltime_since_start="245572" memory_used="154479216" />
+ </process_file>
+ <probcli-errors errors="2" warnings="0" />
+ <statistics walltime="244659" walltime_since_start="245574" memory_used="154484176" />
+</probcli-run>
